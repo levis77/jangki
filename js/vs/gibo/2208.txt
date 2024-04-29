@@ -1,0 +1,43 @@
+[DhtmlXQ_title]"제1회 왕위전 김기영 대 류병렬"[/DhtmlXQ_title]
+[DhtmlXQ_event]제1회 왕위전[/DhtmlXQ_event]
+[DhtmlXQ_red]상마상마[/DhtmlXQ_red]
+[DhtmlXQ_redteam][/DhtmlXQ_redteam]
+[DhtmlXQ_redname]김기영[/DhtmlXQ_redname]
+[DhtmlXQ_redlevel]미상[/DhtmlXQ_redlevel]
+[DhtmlXQ_black]상마상마[/DhtmlXQ_black]
+[DhtmlXQ_blackteam][/DhtmlXQ_blackteam]
+[DhtmlXQ_blackname]류병렬[/DhtmlXQ_blackname]
+[DhtmlXQ_blacklevel]미상[/DhtmlXQ_blacklevel]
+[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_remark]123[/DhtmlXQ_remark]
+[DhtmlXQ_author]돌김[/DhtmlXQ_author]
+[DhtmlXQ_group]미상[/DhtmlXQ_group]
+[DhtmlXQ_date]2008년[/DhtmlXQ_date]
+[DhtmlXQ_place]브레인TV[/DhtmlXQ_place]
+[DhtmlXQ_round]A조 4강전 제3국[/DhtmlXQ_round]
+[DhtmlXQ_binit]0929193948596979891777062646668600201030415060708012720323436383[/DhtmlXQ_binit]
+[DhtmlXQ_movelist]061683737967706277472032465672426946433329374140171560432625808115355041353800016665231319360121361303130900405038888171882821112858504086767181898162816755635355367363362412142432413258388173655513232515141637161115163723244849636459486454554524250006252645353334474515113534111545477365495965773444544446234050062615854749422226362252363230413236431538585354485744453948453536163525160610420600505100607758485854445948443437458582453352322300828348593444332544452544835344635152606252516242[/DhtmlXQ_movelist]
+[DhtmlXQ_comment24]이 부분이 아마추어들이나 프로들의 실전에서 최근 많이 나오는 유형이다.
+
+초의 대응은 크게 3가지로 나뉜다.
+
+1. 졸을 오른쪽 귀윗상 위로 쓴다.
+2. 차로 졸을 지킨다.
+3. 실전처럼 상으로 좌진병을 때린다.[/DhtmlXQ_comment24]
+[DhtmlXQ_comment27]이 부분에서 아마추어들이 초차를 죽이는 실수가 자주 나온다.
+
+그 부분에 대해서는 변화수1에서 간략히 다루었다.[/DhtmlXQ_comment27]
+[DhtmlXQ_comment43]한의 대응은 여기서 크게 3가지가 있다.
+
+기보에 변화수2에서 다루었다.
+
+1. 44의 병을 변쪽으로 당겨 합병하는 수
+(가장 좋음)
+2. 42의 병을 중앙으로 당겨 합병하는 수
+
+3. 포를 앞으로 넘기는 수(가장 나쁨)
+
+실전에서는 류병렬초단이 3번을 선택했다.
+따라서 이후 형태도 안좋아지고 기물상 손해도 보았다.
+
+바로 이 부분이 이 대국의 가장 중요한 포인트.[/DhtmlXQ_comment43]

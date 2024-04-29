@@ -1,0 +1,24 @@
+[DhtmlXQ_title]"제1회 십단전 임영선 대 백갑종"[/DhtmlXQ_title]
+[DhtmlXQ_event]제1회 십단전[/DhtmlXQ_event]
+[DhtmlXQ_red]마상마상[/DhtmlXQ_red]
+[DhtmlXQ_redteam][/DhtmlXQ_redteam]
+[DhtmlXQ_redname]임영선[/DhtmlXQ_redname]
+[DhtmlXQ_redlevel]미상[/DhtmlXQ_redlevel]
+[DhtmlXQ_black]마상마상[/DhtmlXQ_black]
+[DhtmlXQ_blackteam][/DhtmlXQ_blackteam]
+[DhtmlXQ_blackname]백갑종[/DhtmlXQ_blackname]
+[DhtmlXQ_blacklevel]미상[/DhtmlXQ_blacklevel]
+[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_remark]107[/DhtmlXQ_remark]
+[DhtmlXQ_author]돌김[/DhtmlXQ_author]
+[DhtmlXQ_group]미상[/DhtmlXQ_group]
+[DhtmlXQ_date]2019년[/DhtmlXQ_date]
+[DhtmlXQ_place]브레인TV[/DhtmlXQ_place]
+[DhtmlXQ_round]8강전(A조)[/DhtmlXQ_round]
+[DhtmlXQ_binit]0919293948597969891777062646668600102030415070608012720323436383[/DhtmlXQ_binit]
+[DhtmlXQ_movelist]86761022192712421747031346364353695720437956000466650454061660523646415177755041090542402906837375258089252272322636541427351474222851500525233356335233251513141505704205033312285832524645141516261231474989876555415149478788352331230623303148495141394888844744848936354060583860300304748435348482263663643635736304016454555453544447897947435257485779765748762638583052343382890100505100091516583826363858162609046364434752563343[/DhtmlXQ_movelist]
+[DhtmlXQ_comment107]의 다음 수는 35象58
+
+自將
+
+그래서 의 다음 수는 43象26宮 打[/DhtmlXQ_comment107]

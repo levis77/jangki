@@ -1,0 +1,23 @@
+[DhtmlXQ_title]"제12회명인전  이남춘 대 임웅규"[/DhtmlXQ_title]
+[DhtmlXQ_event]제12회명인전 [/DhtmlXQ_event]
+[DhtmlXQ_red]마상상마[/DhtmlXQ_red]
+[DhtmlXQ_redteam][/DhtmlXQ_redteam]
+[DhtmlXQ_redname]이남춘[/DhtmlXQ_redname]
+[DhtmlXQ_redlevel]미상[/DhtmlXQ_redlevel]
+[DhtmlXQ_black]마상마상[/DhtmlXQ_black]
+[DhtmlXQ_blackteam][/DhtmlXQ_blackteam]
+[DhtmlXQ_blackname]임웅규[/DhtmlXQ_blackname]
+[DhtmlXQ_blacklevel]미상[/DhtmlXQ_blacklevel]
+[DhtmlXQ_result]None[/DhtmlXQ_result]
+[DhtmlXQ_remark]85[/DhtmlXQ_remark]
+[DhtmlXQ_author]돌김[/DhtmlXQ_author]
+[DhtmlXQ_group]미상[/DhtmlXQ_group]
+[DhtmlXQ_date][/DhtmlXQ_date]
+[DhtmlXQ_place]미상[/DhtmlXQ_place]
+[DhtmlXQ_round]4강전 (1조) 제2국[/DhtmlXQ_round]
+[DhtmlXQ_binit]0919293948596979891777062646668600102030415070608012720323436383[/DhtmlXQ_binit]
+[DhtmlXQ_movelist]0616102219278373174712427967605246566364775780813938233348497274594874242746242157392151462533233959705325462333262553362535360416150432462781826746414047070313290620030787827286760010871730415919510109084030171310203525223413173446694652448985422285877282876782851747442515252227477785250828010628272527772706002777737467172029383929211710[/DhtmlXQ_movelist]
+[DhtmlXQ_comment85]256수까지 진행되었다고 전해지나
+기록은 85수까지 기록됨
+
+이남춘의 시간초과패[/DhtmlXQ_comment85]

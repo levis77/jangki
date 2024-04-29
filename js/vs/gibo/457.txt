@@ -1,0 +1,47 @@
+[DhtmlXQ_title]"제1회 한게임 장기챔피언스리그 김기영 대 조용희"[/DhtmlXQ_title]
+[DhtmlXQ_event]제1회 한게임 장기챔피언스리그[/DhtmlXQ_event]
+[DhtmlXQ_red]마상마상[/DhtmlXQ_red]
+[DhtmlXQ_redteam][/DhtmlXQ_redteam]
+[DhtmlXQ_redname]김기영[/DhtmlXQ_redname]
+[DhtmlXQ_redlevel]미상[/DhtmlXQ_redlevel]
+[DhtmlXQ_black]마상마상[/DhtmlXQ_black]
+[DhtmlXQ_blackteam][/DhtmlXQ_blackteam]
+[DhtmlXQ_blackname]조용희[/DhtmlXQ_blackname]
+[DhtmlXQ_blacklevel]미상[/DhtmlXQ_blacklevel]
+[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_remark]99[/DhtmlXQ_remark]
+[DhtmlXQ_author]돌김[/DhtmlXQ_author]
+[DhtmlXQ_group]미상[/DhtmlXQ_group]
+[DhtmlXQ_date]2007-01-08[/DhtmlXQ_date]
+[DhtmlXQ_place]한게임 장기 초고수방[/DhtmlXQ_place]
+[DhtmlXQ_round]01[/DhtmlXQ_round]
+[DhtmlXQ_binit]0919293948597969891777062646668600102030415070608012720323436383[/DhtmlXQ_binit]
+[DhtmlXQ_movelist]867603131927102217471242463660522946435369572043666500047775432636262243757863647666646566650424090750512636240407080484898483840616847478384244462313232735233308044442047443353835808279565343568482837472838472703040655584141626333435374344484940505948141537591517393841407060171355455141606513154555150565633435634335362636050257760206593906027684505184634262634452444344025239595255446455456462[/DhtmlXQ_movelist]
+[DhtmlXQ_comment25]김기영은 귀마 선수시 중포
+
+공격을 자주 애용하는 편이다.[/DhtmlXQ_comment25]
+[DhtmlXQ_comment26]한차로 졸을 잡으면 중포 넘기는
+
+수에 의해 한차가 죽게 된다.[/DhtmlXQ_comment26]
+[DhtmlXQ_comment41]매우 좋은 공격수.
+
+급소 자리를 찔러 초의 우세가
+
+전개됨.[/DhtmlXQ_comment41]
+[DhtmlXQ_comment99]한에서 기물 부족으로 결국 포기.
+
+
+-총평-
+
+한에서 궁수비를 소홀히하고
+
+역습을 서둘려 패배를 자초.
+
+초의 중포 공격이 주효하여
+
+중반 이후 시종일관 우세하게
+
+대국 운영.
+
+
+해설 : 김경중[/DhtmlXQ_comment99]

@@ -1,0 +1,52 @@
+[DhtmlXQ_title]"제1회 한게임 장기챔피언스리그 김동학 대 송종일"[/DhtmlXQ_title]
+[DhtmlXQ_event]제1회 한게임 장기챔피언스리그[/DhtmlXQ_event]
+[DhtmlXQ_red]마상마상[/DhtmlXQ_red]
+[DhtmlXQ_redteam][/DhtmlXQ_redteam]
+[DhtmlXQ_redname]김동학[/DhtmlXQ_redname]
+[DhtmlXQ_redlevel]미상[/DhtmlXQ_redlevel]
+[DhtmlXQ_black]마상마상[/DhtmlXQ_black]
+[DhtmlXQ_blackteam][/DhtmlXQ_blackteam]
+[DhtmlXQ_blackname]송종일[/DhtmlXQ_blackname]
+[DhtmlXQ_blacklevel]미상[/DhtmlXQ_blacklevel]
+[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_remark]135[/DhtmlXQ_remark]
+[DhtmlXQ_author]돌김[/DhtmlXQ_author]
+[DhtmlXQ_group]미상[/DhtmlXQ_group]
+[DhtmlXQ_date]2007-01-24[/DhtmlXQ_date]
+[DhtmlXQ_place]한게임 장기 초고수방[/DhtmlXQ_place]
+[DhtmlXQ_round]25[/DhtmlXQ_round]
+[DhtmlXQ_binit]0919293948597969891777062646668600102030415070608012720323436383[/DhtmlXQ_binit]
+[DhtmlXQ_movelist]867603131927102217471242463660520919808179564353191500041585838485658161294622434623132365252003252303316957415148495041594842404707041407378474375951500616415177474322232540202505204039386364274614135929131289806171295940608083716159192214463453635624637383851202050214023446523319596454853561633585746485826362767502104777622277737212822210226665646546651242493950407377331226255464654422434423304177701233363560301626332126363050707751527747413259525020234232425259316335344030344443225937423237322050323763315745210245640223645222033732[/DhtmlXQ_movelist]
+[DhtmlXQ_comment25]팽팽하고 미세한 국면에서는
+
+상 대 양병의 교환이 크다.[/DhtmlXQ_comment25]
+[DhtmlXQ_comment74]초에서 거세게 몰아 공격해 보지만
+
+한의 대응이 만만치 않다.[/DhtmlXQ_comment74]
+[DhtmlXQ_comment83]결국 졸을 취하여 소기의 작은
+
+목적을 달성.[/DhtmlXQ_comment83]
+[DhtmlXQ_comment113]사를 그냥 죽인 실수로 인해
+
+더욱더 불리해짐.[/DhtmlXQ_comment113]
+[DhtmlXQ_comment135]저렇게 외통당하는 수를 우려했는데
+
+결국 묘수풀이 문제에서나
+
+나올듯한 형태로 외통을 당한 점이
+
+마음 아프다.
+
+-총평-
+
+너무 소극적인 수비 자세로 공격 한번
+
+해보지도 못했는데 연세가 많아 실수가
+
+많고 컴퓨터 대국이라 실력 발휘를
+
+제대로 못하는 것이 제3자 입장에서
+
+봤을때 너무나 아쉽다.
+
+해설 : 김경중[/DhtmlXQ_comment135]

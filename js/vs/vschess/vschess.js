@@ -3,7 +3,7 @@
  * https://www.xiaxiangqi.com/
  *
  * Copyright @ 2009-2023 Margin.Top 版权所有
- * https://margin.top/
+ * https://www.suntev.com/
  *
  * 本程序遵循 LGPL 协议
  * https://www.gnu.org/licenses/lgpl.html
@@ -1694,6 +1694,7 @@
 		// 可导出棋谱格式列表
 		exportFormatList: {
 			PGN_Chinese: "\u4e2d\u6587 PGN \u683c\u5f0f",
+			GIB: "장기도사 GIB 파일",
 			PGN_WXF: "WXF PGN \u683c\u5f0f",
 			PGN_ICCS: "ICCS PGN \u683c\u5f0f",
 			PengFei: "\u9e4f\u98de PFC \u683c\u5f0f",
@@ -1702,7 +1703,6 @@
 			ChessDB: "\u4e91\u5e93\u6307\u4ee4\u683c\u5f0f",
 			Text: "\u6587\u672c TXT \u683c\u5f0f",
 			QQ: "\uff31\uff31 CHE \u683c\u5f0f",
-			GIB: "\u8C61\u68CB\u9053\u58EB GIB \u683c\u5f0f",
 			TextBoard: "\u6587\u5b57\u68cb\u76d8"
 		},
 
@@ -1812,12 +1812,12 @@
 
 		// 起始局面提示信息
 		startTips: [
-			"\u84dd\u8272\u7684\u7740\u6cd5\u542b\u6709\u53d8\u7740",
-			"\u6807\u6709\u661f\u53f7\u7684\u7740\u6cd5\u542b\u6709\u6ce8\u89e3",
-			"\u652F\u6301\u97E9\u56FD\u8C61\u68CB\u9053\u58EB\u7B49\u683C\u5F0F",
-			"\u5355\u51fb\u201c\u590d\u5236\u201d\u590d\u5236\u5f53\u524d\u5c40\u9762",
-			'<a href="https://gibo.netlify.app/" target="_blank">GiboNara民俗象棋棋谱网 VsChess V' + vschess.version + "</a>",
-			'<a href="https://margin.top/" target="_blank">Margin.Top &copy; \u7248\u6743\u6240\u6709</a>'
+			"청색행마는 변형행마가 있슴",
+			"'*'별표기는 해설이 존재함",
+			"장기도사 GIB파일을 지원함",
+			"'복사'버튼으로 현재판복사",
+			'<a href="https://gibo.netlify.app/" target="_blank">GiboNara기보나라 VsChess V' + vschess.version + "</a>",
+			'<a href="https://www.suntev.com/" target="_blank">Suntev.com &copy; CopyRight</a>'
 		],
 
 		// 云服务 API 地址
@@ -1833,7 +1833,7 @@
 		// 默认推荐起始局面列表
 		recommendList: [
 			{
-				name: "\u5e38\u7528\u5f00\u5c40", fenList: [
+				name: "일반포진", fenList: [
 
 					/*	{ name: "\u6807\u51c6\u5f00\u5c40", fen: "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1" }, //马象马象 马象象马 
 						{ name: "\u7ea2\u8ba9\u5de6\u9a6c", fen: "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/R1BAKABNR w - - 0 1" }, //马象马象 马象马象
@@ -1851,10 +1851,10 @@
 						{ name: "\u7ea2\u8ba9\u4e94\u5175", fen: "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/9/1C5C1/9/RNBAKABNR w - - 0 1" },			//象马马象 马象马象
 						{ name: "\u9ed1\u8ba9\u4e94\u5352", fen: "rnbakabnr/9/1c5c1/9/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1" },			//象马马象 象马象马
 						{ name: "\u7ea2\u8ba9\u4e5d\u5b50", fen: "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/9/1C5C1/9/RN2K2NR w - - 0 1" },			//象马马象 象马马象
-						{ name: "\u7a7a\u767d\u68cb\u76d8", fen: "9/9/9/9/9/9/9/9/9/9 w - - 0 1" },   //空白棋盘
-						{ name: "\u53ea\u6709\u695a\u6c49", fen: "5k3/9/9/9/9/9/9/9/9/3K5 w - - 0 1" },//只有楚汉
+						{ name: "빈 판", fen: "9/9/9/9/9/9/9/9/9/9 w - - 0 1" },   //空白棋盘
+						{ name: "초한 만", fen: "5k3/9/9/9/9/9/9/9/9/3K5 w - - 0 1" },//只有楚汉
 					*/
-					{ name: "\u53ea\u6709\u695a\u6c49", fen: "9/4k4/9/9/9/9/9/9/4K4/9 w - - 0 1" },//只有楚汉
+					{ name: "초한 만", fen: "9/4k4/9/9/9/9/9/9/4K4/9 w - - 0 1" },//只有楚汉
 					{ name: "\u9a6c\u8c61\u9a6c\u8c61 \u9a6c\u8c61\u8c61\u9a6c", fen: "rnba1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR w - - 0 1" }, //马象马象 马象象马
 					{ name: "\u9a6c\u8c61\u9a6c\u8c61 \u9a6c\u8c61\u9a6c\u8c61", fen: "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR w - - 0 1" }, //马象马象 马象马象 맞상
 					{ name: "\u9a6c\u8c61\u9a6c\u8c61 \u8c61\u9a6c\u8c61\u9a6c", fen: "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ABNR w - - 0 1" }, //马象马象 象马象马
@@ -1871,7 +1871,7 @@
 					{ name: "\u8c61\u9a6c\u9a6c\u8c61 \u9a6c\u8c61\u9a6c\u8c61", fen: "rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR w - - 0 1" }, //象马马象 马象马象
 					{ name: "\u8c61\u9a6c\u9a6c\u8c61 \u8c61\u9a6c\u8c61\u9a6c", fen: "rbna1abnr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR w - - 0 1" }, //象马马象 象马象马
 					{ name: "\u8c61\u9a6c\u9a6c\u8c61 \u8c61\u9a6c\u9a6c\u8c61", fen: "rbna1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RBNA1ANBR w - - 0 1" }, //象马马象 象马马象
-					{ name: "\u7a7a\u767d\u68cb\u76d8", fen: "9/9/9/9/9/9/9/9/9/9 w - - 0 1" },   //空白棋盘
+					{ name: "빈 판", fen: "9/9/9/9/9/9/9/9/9/9 w - - 0 1" },   //空白棋盘
 
 
 				]
@@ -1880,33 +1880,32 @@
 
 		// 标签名称
 		tagName: {
-			comment: "\u68cb\u8c31\u6ce8\u89e3",
-			info: "\u68cb\u5c40\u4fe1\u606f",
-			share: "\u68cb\u8c31\u5206\u4eab",
-			export: "\u68cb\u8c31\u5bfc\u51fa",
-			edit: "\u68cb\u8c31\u5bfc\u5165",
-			config: "\u68cb\u76d8\u9009\u9879"
+			comment: "기보해설",
+			info: "기보정보",
+			share: "기보공유",
+			export: "기보출력",
+			edit: "기보입력",
+			config: "설정"
 		}
 	});
 
 	// 默认帮助信息
-	vschess.defaultOptions.help = '<h1>民俗将棋 VsChess V' + vschess.version + ' \u5e2e\u52a9\u4fe1\u606f</h1>';
+	vschess.defaultOptions.help = '<h1>기보나라 VsChess V' + vschess.version + ' 도움말</h1>';
 	vschess.defaultOptions.help += '<hr />';
-	vschess.defaultOptions.help += '<h2>1.&ensp;&ensp;\u5355\u51fb\u201c\u64ad\u653e\u201d\u6309\u94ae\uff0c\u53ef\u4ee5\u81ea\u52a8\u64ad\u653e\u68cb\u5c40\uff1b\u64ad\u653e\u8fc7\u7a0b\u4e2d\uff0c\u5355\u51fb\u201c\u6682\u505c\u201d\u6309\u94ae\uff0c\u68cb\u5c40\u505c\u6b62\u81ea\u52a8\u64ad\u653e\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>2.&ensp;&ensp;\u5355\u51fb\u201c\u524d\u8fdb\u201d\u3001\u201c\u540e\u9000\u201d\u6309\u94ae\uff0c\u6bcf\u6b21\u53d8\u53161\u6b65\uff1b\u5355\u51fb\u201c\u5feb\u8fdb\u201d\u3001\u201c\u5feb\u9000\u201d\u6309\u94ae\uff0c\u6bcf\u6b21\u53d8\u5316#quickStepOffsetRound#\u4e2a\u56de\u5408\uff0c\u5373#quickStepOffset#\u6b65\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>3.&ensp;&ensp;\u5355\u51fb\u201c\u590d\u5236\u201d\u6309\u94ae\uff0c\u53ef\u4ee5\u590d\u5236\u5f53\u524d\u5c40\u9762\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>4.&ensp;&ensp;\u590d\u5236\u5c40\u9762\u540e\uff0c\u53ef\u4ee5\u76f4\u63a5\u5728\u4e13\u4e1a\u8c61\u68cb\u8f6f\u4ef6\u4e2d\u7c98\u8d34\u4f7f\u7528\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>5.&ensp;&ensp;\u5206\u6790\u5c40\u9762\u65f6\uff0c\u5efa\u8bae\u6c49\u5c40\u9762\u590d\u5236\u5230\u4e13\u4e1a\u8c61\u68cb\u8f6f\u4ef6\u4e2d\u8fdb\u884c\u5206\u6790\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>6.&ensp;&ensp;\u53ef\u4ee5\u76f4\u63a5\u5728\u68cb\u76d8\u4e0a\u8d70\u68cb\uff0c\u4fbf\u4e8e\u5206\u6790\u5c40\u9762\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>7.&ensp;&ensp;\u5728\u7740\u6cd5\u5217\u8868\u4e2d\u53ef\u4ee5\u8c03\u6574\u53d8\u62db\u987a\u5e8f\u6216\u5220\u9664\u7740\u6cd5\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>8.&ensp;&ensp;\u6ce8\u91ca\u4fee\u6539\u540e\u76f4\u63a5\u5728\u6ce8\u91ca\u533a\u5916\u9762\u4efb\u610f\u5904\u5355\u51fb\u5373\u53ef\u751f\u6548\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>9.&ensp;&ensp;\u7f16\u8f91\u5c40\u9762\u4f1a\u5931\u53bb\u5f53\u524d\u68cb\u8c31\uff0c\u8bf7\u6ce8\u610f\u4fdd\u5b58\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>10.&ensp;\u7f16\u8f91\u5c40\u9762\u6807\u7b7e\u4e2d\uff0c\u53ef\u4ee5\u76f4\u63a5\u6253\u5f00\u7535\u8111\u4e2d\u7684\u68cb\u8c31\uff0c\u4e5f\u53ef\u4ee5\u76f4\u63a5\u6c49\u68cb\u8c31\u6587\u4ef6\u62d6\u62fd\u5230\u672c\u68cb\u76d8\u4e0a\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>11.&ensp;\u652f\u6301\u4e1c\u840d\u3001\u9e4f\u98de\u3001\u8c61\u68cb\u4e16\u5bb6\u3001\u6807\u51c6PGN\u3001\u4e2d\u56fd\u6e38\u620f\u4e2d\u5fc3\u3001QQ\u8c61\u68cb\u7b49\u683c\u5f0f\uff0c\u5176\u4ed6\u683c\u5f0f\u7a0b\u5e8f\u4e5f\u4f1a\u5c1d\u8bd5\u81ea\u52a8\u8bc6\u522b\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>12.&ensp;\u68cb\u76d8\u9009\u9879\u4e2d\uff0c\u53ef\u4ee5\u63a7\u5236\u68cb\u76d8\u65b9\u5411\u3001\u64ad\u653e\u901f\u5ea6\u3001\u8d70\u5b50\u58f0\u97f3\u7b49\u3002</h2>';
-	vschess.defaultOptions.help += '<h2>13.&ensp;\u68cb\u8c31\u5206\u4eab\u529f\u80fd\u751f\u6210\u7684\u8bba\u575b UBB \u4ee3\u7801\uff0c\u53ef\u4ee5\u5728\u652f\u6301\u8be5\u4ee3\u7801\u7684\u8bba\u575b\u4e2d\u4f7f\u7528\u3002<a href="https://www.xiaxiangqi.com/" target="_blank">\u3010\u67e5\u770b\u90fd\u6709\u54ea\u4e9b\u8bba\u575b\u652f\u6301\u8be5\u4ee3\u7801\u3011</a></h2>';
+	vschess.defaultOptions.help += '<h2>1.&ensp;&ensp; "재생" 버튼클릭하면 기보가 자동으로 재생됩니다. 재생 중에 "정지" 버튼을 클릭하면 기보재생이 중단됩니다.</h2>';
+	vschess.defaultOptions.help += '<h2>2.&ensp;&ensp; ">" "<" 버튼을 클릭하면 1수씩 변화합니다. ">>" "<<" 버튼을 클릭하면 매번 10수씩 변화합니다.</h2>';
+	vschess.defaultOptions.help += '<h2>3.&ensp;&ensp;"복사" 버튼을 클릭하면 현재 판 상태를 복사할 수 있습니다.</h2>';
+	vschess.defaultOptions.help += '<h2>4.&ensp;&ensp; 판 복사한 후 전문적인 인공지능 소프트웨어에 입력하여 사용할 수 있습니다.</h2>';
+	vschess.defaultOptions.help += '<h2>5.판 분석할 시 전문적인 인공지능 소프트웨어 사용을 권장합니다.</h2>';
+	vschess.defaultOptions.help += '<h2>6.&ensp;&ensp;장기판에서 직접 놓아보기를 할수 있습니다.</h2>';
+	vschess.defaultOptions.help += '<h2>7.&ensp;&ensp;행마 목차에서 행마순서를 변경 혹은 행마를 지울수 있습니다.</h2>';
+	vschess.defaultOptions.help += '<h2>8.&ensp;&ensp;기보해설 입력후 기보입력창외 아무곳을 클릭하면 저장됩니다.</h2>';
+	vschess.defaultOptions.help += '<h2>9.&ensp;&ensp;판 편집시 현재기보가 지워지므로 기보저장을 주의하세요.</h2>';
+	vschess.defaultOptions.help += '<h2>10.&ensp;판 편집 메뉴에서 기보파일을 바로 열수 있으며, 기보파일을 장기 판 위에 드래그하여 열수도 있습니다.</h2>';
+	vschess.defaultOptions.help += '<h2>11.&ensp;장기도사 GIB파일, 동평,Pengfei, 썅치世家,표준PGN,중국게임센터,QQ썅치등의 포맷을 지원합니다. 기타 포맷은 프로그램이 자동으로 인식하도록 시도합니다.</h2>';
+	vschess.defaultOptions.help += '<h2>12.&ensp;"설정"에서, 장기판 방향, 기보 재생속도, 장기알 소리 등을 설정할 수 있습니다.</h2>';
 	vschess.defaultOptions.help += '<hr />';
-	vschess.defaultOptions.help += '<h2><a href="https://www.xiaxiangqi.com/vschess/" target="_blank">民俗将棋 VsChess V' + vschess.version + '</a> <a href="https://margin.top/" target="_blank">Margin.Top &copy; \u7248\u6743\u6240\u6709</a></h2>';
+	vschess.defaultOptions.help += '<h2><a href="https://gibo.netlify.app" target="_blank">기보나라 VsChess V' + vschess.version + '</a> <a href="https://www.suntev.com/" target="_blank">Suntev.com &copy; CopyRight</a></h2>';
 
 	// IE6 兼容，棋子 PNG 图片透明，如果需要自定义棋子图片路径，请参考官方文档
 	vschess.IE6Compatible_setPieceTransparent = function (options) {
@@ -7475,12 +7474,12 @@
 	// 创建棋谱注解区域空白提示
 	vschess.load.prototype.createCommentPlaceholder = function () {
 		if (vschess.placeholder) {
-			this.commentTextarea.attr({ "placeholder": "\u8fd9\u91cc\u53ef\u4ee5\u586b\u5199\u6ce8\u89e3" });
+			this.commentTextarea.attr({ "placeholder": "여기에 기보해설을 적을수 있습니다." });
 			return this;
 		}
 
 		var _this = this, commentMonitor;
-		this.commentTextareaPlaceholder = $('<div class="vschess-tab-body-comment-textarea-placeholder">\u8fd9\u91cc\u53ef\u4ee5\u586b\u5199\u6ce8\u89e3</div>');
+		this.commentTextareaPlaceholder = $('<div class="vschess-tab-body-comment-textarea-placeholder">여기에 기보해설을 적을수 있습니다.</div>');
 		this.commentArea.append(this.commentTextareaPlaceholder);
 		this.commentTextarea.bind("focus", function () { commentMonitor = setInterval(function () { _this.commentTextarea.val() ? _this.commentTextareaPlaceholder.hide() : _this.commentTextareaPlaceholder.show(); }, 20); });
 		this.commentTextarea.bind("blur", function () { clearInterval(commentMonitor); });
@@ -7523,55 +7522,53 @@
 		this.configRange = {};
 		this.configSelect = {};
 
-		this.addConfigItem("turnX", "\u5de6\u53f3\u7ffb\u8f6c", "boolean", true, "", function () {
+		this.addConfigItem("turnX", "좌우회전", "boolean", true, "", function () {
 			_this.setTurn(_this.configValue["turnY"] * 2 + _this.configValue["turnX"], 1);
 		});
 
-		this.addConfigItem("turnY", "\u4e0a\u4e0b\u7ffb\u8f6c", "boolean", true, "", function () {
+		this.addConfigItem("turnY", "상하회전", "boolean", true, "", function () {
 			_this.setTurn(_this.configValue["turnY"] * 2 + _this.configValue["turnX"], 1);
 		});
 
-		this.addConfigItem("moveTips", "\u8d70\u5b50\u63d0\u793a", "boolean", true, "", function () {
+		this.addConfigItem("moveTips", "행마힌트", "boolean", true, "", function () {
 			_this._.moveTips = _this.configValue["moveTips"];
 		});
 
-		this.addConfigItem("sound", "\u8d70\u5b50\u97f3\u6548", "boolean", true, "", function () {
+		this.addConfigItem("sound", "효과음", "boolean", true, "", function () {
 			_this._.sound = _this.configValue["sound"];
 		});
 
-		this.addConfigItem("speakMove", "\u7740\u6cd5\u6717\u8bfb", "boolean", false, "", function () {
+		this.addConfigItem("speakMove", "행마읽기", "boolean", false, "", function () {
 			_this._.speakMove = _this.configValue["speakMove"];
 		});
 
-		this.addConfigItem("saveTips", "\u4fdd\u5b58\u63d0\u793a", "boolean", true, "", function () {
+		this.addConfigItem("saveTips", "저장경고", "boolean", true, "", function () {
 			_this._.saveTips = _this.configValue["saveTips"];
 		});
 
-		this.addConfigItem("pieceRotate", "\u68cb\u5b50\u65cb\u8f6c", "boolean", true, "", function () {
+		this.addConfigItem("pieceRotate", "기물회전", "boolean", true, "", function () {
 			_this._.pieceRotate = _this.configValue["pieceRotate"];
 			_this.setBoardByStep();
 		});
 
-		this.addConfigItem("banRepeatLongThreat", "\u7981\u6b62\u957f\u6253", "boolean", true, "", function () {
+		this.addConfigItem("banRepeatLongThreat", "반복수금지", "boolean", true, "", function () {
 			_this._.banRepeatLongThreat = _this.configValue["banRepeatLongThreat"];
 		});
 
-		this.addConfigItem("banRepeatLongKill", "\u7981\u6b62\u4e00\u6c49\u4e00\u6740", "boolean", true, "", function () {
+		this.addConfigItem("banRepeatLongKill", "연장군금지", "boolean", true, "", function () {
 			_this._.banRepeatLongKill = _this.configValue["banRepeatLongKill"];
 			_this.repeatLongKillMoveList = _this._.banRepeatLongKill ? _this.getRepeatLongKillMove() : [];
 		});
 
-		this.addConfigItem("illegalTips", "\u8fdd\u4f8b\u63d0\u793a", "boolean", true, "", function () {
+		this.addConfigItem("illegalTips", "반칙경고", "boolean", true, "", function () {
 			_this._.illegalTips = _this.configValue["illegalTips"];
 		});
 
-		this.addConfigItem("playGap", "\u64ad\u653e\u95f4\u9694", "select", 5, "0.5\u79d2:5,2\u79d2:20,5\u79d2:50,10\u79d2:100,20\u79d2:200,30\u79d2:300", function () {
-			
-			
+		this.addConfigItem("playGap", "재생간격", "select", 5, "0.5초:5,2초:20,5초:50,10초:100,20초:200,30초:300", function () {
 			_this._.playGap = _this.configValue["playGap"];
 		});
 
-		this.addConfigItem("volume", "\u97f3\u6548\u97f3\u91cf", "range", 100, "0,100", function () {
+		this.addConfigItem("volume", "효과음", "range", 100, "0,100", function () {
 			_this._.volume = _this.configValue["volume"];
 		});
 
@@ -7687,14 +7684,14 @@
 		var _this = this;
 		this.controlBar = $('<div class="vschess-control-bar"></div>');
 		this.controlBarButton = {
-			first: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-first">\u5f00 \u5c40</button>'),
-			prevQ: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-prevQ">\u5feb \u9000</button>'),
-			prev: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-prev" >\u540e \u9000</button>'),
-			play: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-play" >\u64ad \u653e</button>'),
-			pause: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-pause">\u6682 \u505c</button>'),
-			next: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-next" >\u524d \u8fdb</button>'),
-			nextQ: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-nextQ">\u5feb \u8fdb</button>'),
-			last: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-last" >\u7ec8 \u5c40</button>')
+			first: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-first">|<<</button>'),
+			prevQ: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-prevQ"><<</button>'),
+			prev: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-prev" ><</button>'),
+			play: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-play" >재생</button>'),
+			pause: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-pause">정지</button>'),
+			next: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-next" >></button>'),
+			nextQ: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-nextQ">>></button>'),
+			last: $('<button type="button" class="vschess-button vschess-control-bar-button vschess-control-bar-last" >>>|</button>')
 		};
 
 		this.controlBarButton.first.bind(this.options.click, function () { _this.pause(false).setBoardByStep(0); _this.playSound("click") });
@@ -7746,12 +7743,12 @@
 
 		this.formatBarButton = {
 
-			pass: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-pass"   >\u8fc7</button>'),
-			copy: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-copy"   >\u590d \u5236</button>'),
-			format: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-format" >\u683c \u5f0f</button>'),
-			help: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-help"   >\u5e2e \u52a9</button>'),
+			pass: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-pass"   >한수쉼</button>'),
+			copy: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-copy"   >복 사</button>'),
+			format: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-format" >포 맷</button>'),
+			help: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-help"   >도움말</button>'),
 			//save		: $('<button type="hid" class="vschess-button vschess-format-bar-button vschess-format-bar-save"   >\u4fdd \u5b58</button>'),
-			chinese: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-chinese">\u4e2d \u6587</button>'),
+			chinese: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-chinese">한 자</button>'),
 			wxf: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-wxf"    >WXF</button>'),
 			iccs: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-iccs"   >ICCS</button>'),
 			saveFormat: $('<input  type="hidden" class="vschess-format-bar-save-format"   name="format" value="DhtmlXQ" />'),
@@ -7775,7 +7772,7 @@
 		
 				if (vschess.localDownload) {
 					var UTF8Text = _this.exportData.DhtmlXQ.replace(/\n/g, "\r\n").replace(/\r\r/g, "\r");
-					_this.localDownload((_this.chessInfo.title || "民俗将棋") + ".txt", UTF8Text, { type: "text/plain" });
+					_this.localDownload((_this.chessInfo.title || "기보나라") + ".txt", UTF8Text, { type: "text/plain" });
 				}
 				else {
 					_this.formatBarButton.saveInput   .val(_this.exportData.DhtmlXQ);
@@ -7810,7 +7807,7 @@
 		}
 
 		this.formatBarButton.copy.bind(this.options.click, function () {
-			_this.copy(_this.getCurrentFen(), function () { _this.showMessage("\u5c40\u9762\u590d\u5236\u6210\u529f\uff0c\u60a8\u53ef\u4ee5\u76f4\u63a5\u5728\u8c61\u68cb\u8f6f\u4ef6\u4e2d\u7c98\u8d34\u4f7f\u7528\uff01"); });
+			_this.copy(_this.getCurrentFen(), function () { _this.showMessage("판 복사가 완료되었습니다. 다른 프로그램에 판 붙여넣기를 할수 있습니다."); });
 		});
 
 		this.formatBarButton.pass.bind(this.options.click, function () {
@@ -8173,7 +8170,7 @@
 	// 创建编辑局面区域开始编辑按钮
 	vschess.load.prototype.createEditStartButton = function () {
 		var _this = this;
-		this.editStartButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-start-button">\u7f16\u8f91\u5c40\u9762</button>');
+		this.editStartButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-start-button">판 편집</button>');
 		this.editStartButton.appendTo(this.editArea);
 		this.editStartButton.bind(this.options.click, function () { _this.showEditBoard(); });
 		return this;
@@ -8198,7 +8195,7 @@
 	// 创建编辑局面区域结束编辑按钮
 	vschess.load.prototype.createEditEndButton = function () {
 		var _this = this;
-		this.editEndButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-end-button">\u786e \u5b9a</button>');
+		this.editEndButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-end-button">예</button>');
 		this.editEndButton.appendTo(this.editArea);
 
 		this.editEndButton.bind(this.options.click, function () {
@@ -8255,7 +8252,7 @@
 	// 创建编辑局面区域取消编辑按钮
 	vschess.load.prototype.createEditCancelButton = function () {
 		var _this = this;
-		this.editCancelButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-cancel-button">\u53d6 \u6d88</button>');
+		this.editCancelButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-cancel-button">취 소</button>');
 		this.editCancelButton.appendTo(this.editArea);
 
 		this.editCancelButton.bind(this.options.click, function () {
@@ -8270,9 +8267,9 @@
 	// 创建编辑局面区域输入框
 	vschess.load.prototype.createEditTextarea = function () {
 		var _this = this;
-		var UA = navigator.userAgent.toLowerCase(), contextMenu = "\u957f\u6309";
-		!~UA.indexOf("android") && !~UA.indexOf("iph") && !~UA.indexOf("ipad") && (contextMenu = "\u53f3\u952e\u5355\u51fb");
-		this.editTipsText = "\u70b9\u51fb\u53f3\u4fa7\u7684\u68cb\u5b50\u53ef\u5c06\u5176\u653e\u7f6e\u5728\u68cb\u76d8\u4e0a\uff0c" + contextMenu + "\u68cb\u76d8\u4e0a\u7684\u68cb\u5b50\u53ef\u4ee5\u5c06\u5176\u79fb\u9664\u3002";
+		var UA = navigator.userAgent.toLowerCase(), contextMenu = "꾹 누르면";
+		!~UA.indexOf("android") && !~UA.indexOf("iph") && !~UA.indexOf("ipad") && (contextMenu = " 오른쪽 마우스를 클릭하면 ");
+		this.editTipsText = "오른쪽 기물을 클릭하여 판위에 기물을 놓음" + contextMenu + "판위의 기물을 지움.";
 		this.editTips = $('<input class="vschess-tab-body-edit-tips" value="' + this.editTipsText + '" readonly="readonly" />').appendTo(this.DOM);
 		this.editTextarea = $('<textarea class="vschess-tab-body-edit-textarea"></textarea>').appendTo(this.editArea);
 
@@ -8288,7 +8285,7 @@
 
 	// 创建编辑局面区域空白提示
 	vschess.load.prototype.createEditPlaceholder = function () {
-		var placeholderText = "\u8bf7\u6c49\u5c40\u9762\u4ee3\u7801\u7c98\u8d34\u5230\u8fd9\u91cc\uff0c\u652f\u6301\u6807\u51c6FEN\u3001\u4e1c\u840d\u8c61\u68cb\u3001\u8c61\u68cb\u4e16\u5bb6\u7b49\u683c\u5f0f\uff0c\u5176\u4ed6\u683c\u5f0f\u7a0b\u5e8f\u4f1a\u5c1d\u8bd5\u8fdb\u884c\u8bc6\u522b\u3002";
+		var placeholderText = "기보내용를 여기에 붙여넣으세요. 장기도사 GIB파일포맷을 지원합니다. 기타 포맷은 프로그램이 자동으로 인식하도록 시도합니다";
 
 		if (vschess.placeholder) {
 			this.editTextarea.attr({ "placeholder": placeholderText });
@@ -8390,7 +8387,7 @@
 	// 创建编辑局面区域开始回合数编辑框
 	vschess.load.prototype.createEditStartRound = function () {
 		var _this = this;
-		this.editEditStartText = $('<div class="vschess-tab-body-edit-start-text">\u56de\u5408\uff1a</div>');
+		this.editEditStartText = $('<div class="vschess-tab-body-edit-start-text">라운드\uff1a</div>');
 		this.editEditStartText.appendTo(this.editArea);
 		this.editEditStartRound = $('<input type="number" class="vschess-tab-body-edit-start-round" />');
 		this.editEditStartRound.appendTo(this.editArea);
@@ -8617,7 +8614,7 @@
 	// 创建粘贴棋谱区域开始编辑按钮
 	vschess.load.prototype.createNodeStartButton = function () {
 		var _this = this;
-		this.editNodeStartButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-node-start-button">\u7c98\u8d34\u68cb\u8c31</button>');
+		this.editNodeStartButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-node-start-button">기보 붙여넣기</button>');
 		this.editNodeStartButton.appendTo(this.editArea);
 
 		this.editNodeStartButton.bind(this.options.click, function () {
@@ -8634,11 +8631,11 @@
 	// 创建粘贴棋谱区域完成编辑按钮
 	vschess.load.prototype.createNodeEndButton = function () {
 		var _this = this;
-		this.editNodeEndButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-node-end-button">\u786e \u5b9a</button>');
+		this.editNodeEndButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-node-end-button">예</button>');
 		this.editNodeEndButton.appendTo(this.editArea);
 
 		this.editNodeEndButton.bind(this.options.click, function () {
-			if (!_this.confirm("\u786e\u5b9a\u4f7f\u7528\u65b0\u7684\u68cb\u8c31\u5417\uff1f\u5f53\u524d\u68cb\u8c31\u4f1a\u4e22\u5931\uff01")) {
+			if (!_this.confirm("새 기보를 사용하겠습니까?현재기보는 저장되지 않습니다.")) {
 				return false;
 			}
 
@@ -8664,7 +8661,7 @@
 	// 创建粘贴棋谱区域取消编辑按钮
 	vschess.load.prototype.createNodeCancelButton = function () {
 		var _this = this;
-		this.editNodeCancelButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-node-cancel-button">\u53d6 \u6d88</button>');
+		this.editNodeCancelButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-node-cancel-button">아니오</button>');
 		this.editNodeCancelButton.appendTo(this.editArea);
 
 		this.editNodeCancelButton.bind(this.options.click, function () {
@@ -8686,7 +8683,7 @@
 
 	// 创建粘贴棋谱区域空白提示
 	vschess.load.prototype.createNodeEditPlaceholder = function () {
-		var placeholderText = "\u8bf7\u6c49\u68cb\u8c31\u4ee3\u7801\u7c98\u8d34\u5230\u8fd9\u91cc\uff0c\u6216\u8005\u76f4\u63a5\u6c49\u68cb\u8c31\u6587\u4ef6\u62d6\u62fd\u5230\u68cb\u76d8\u4e0a\u3002\u652f\u6301\u6807\u51c6PGN\u3001\u4e1c\u840d\u8c61\u68cb DhtmlXQ\u3001\u9e4f\u98de\u8c61\u68cb PFC\u3001\u8c61\u68cb\u4e16\u5bb6\u3001QQ \u65b0\u4e2d\u56fd\u8c61\u68cb\u7b49\u683c\u5f0f\uff0c\u5176\u4ed6\u683c\u5f0f\u7a0b\u5e8f\u4f1a\u5c1d\u8bd5\u8fdb\u884c\u8bc6\u522b\u3002";
+		var placeholderText = "기보내용를 여기에 붙여넣으세요. 혹은 직접 기보파일을 열거나 드래그 하세요. 장기도사 GIB파일, 동평,Pengfei, 썅치世家,표준PGN,중국게임센터,QQ썅치등의 포맷을 지원합니다. 기타 포맷은 프로그램이 자동으로 인식하도록 시도합니다.";
 
 		if (vschess.placeholder) {
 			this.editNodeTextarea.attr({ "placeholder": placeholderText });
@@ -8708,7 +8705,7 @@
 
 		// 打开棋谱按钮
 		var buttonId = "vschess-tab-body-edit-open-button-" + vschess.guid();
-		this.editOpenButton = $('<label for="' + buttonId + '" class="vschess-button vschess-tab-body-edit-open-button">\u6253\u5f00\u68cb\u8c31</label>');
+		this.editOpenButton = $('<label for="' + buttonId + '" class="vschess-button vschess-tab-body-edit-open-button">기보열기</label>');
 		this.editOpenButton.appendTo(this.editArea);
 		this.editOpenFile = $('<input type="file" class="vschess-tab-body-edit-open-file" id="' + buttonId + '" />');
 		this.editOpenFile.appendTo(this.editArea);
@@ -8721,7 +8718,7 @@
 					var reader = new FileReader();
 					reader.readAsArrayBuffer(file);
 					reader.onload = function () {
-						if (!_this.confirm("\u786e\u5b9a\u6253\u5f00\u8be5\u68cb\u8c31\u5417\uff1f\u5f53\u524d\u68cb\u8c31\u4f1a\u4e22\u5931\uff01")) {
+						if (!_this.confirm("기보를 열겠습니까? 현재기보는 저장되지 않습니다.")) {
 							return false;
 						}
 
@@ -8758,18 +8755,18 @@
 				}
 			}
 			else {
-				alert("\u5bf9\u4e0d\u8d77\uff0c\u8be5\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u6253\u5f00\u68cb\u8c31\u3002");
+				alert("현재 웹브라우저는 기보열기를 지원하지 않습니다.");
 			}
 
 			this.value = "";
 		});
 
 		// 重新开局按钮
-		this.editBeginButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-begin-button">\u91cd\u65b0\u5f00\u5c40</button>');
+		this.editBeginButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-begin-button">새로시작</button>');
 		this.editBeginButton.appendTo(this.editArea);
 
 		this.editBeginButton.bind(this.options.click, function () {
-			if (!_this.confirm("\u786e\u5b9a\u91cd\u65b0\u5f00\u5c40\u5417\uff1f\u5f53\u524d\u68cb\u8c31\u4f1a\u4e22\u5931\uff01")) {
+			if (!_this.confirm("새로 시작을 하겠습니까? 현재기보는 저장되지 않습니다.")) {
 				return false;
 			}
 
@@ -8787,7 +8784,7 @@
 		});
 
 		// 清空棋盘按钮
-		this.editBlankButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-blank-button">\u6e05\u7a7a\u68cb\u76d8</button>');
+		this.editBlankButton = $('<button type="button" class="vschess-button vschess-tab-body-edit-blank-button">판 삭제</button>');
 		this.editBlankButton.appendTo(this.editArea);
 
 		this.editBlankButton.bind(this.options.click, function () {
@@ -8822,7 +8819,7 @@
 				var reader = new FileReader();
 				reader.readAsArrayBuffer(file);
 				reader.onload = function () {
-					if (!_this.confirm("\u786e\u5b9a\u4f7f\u7528\u65b0\u7684\u68cb\u8c31\u5417\uff1f\u5f53\u524d\u68cb\u8c31\u4f1a\u4e22\u5931\uff01")) {
+					if (!_this.confirm("새 기보를 사용하겠습니까?현재기보는 저장되지 않습니다.")) {
 						return false;
 					}
 
@@ -8906,8 +8903,8 @@
 		this.exportFormat = $('<select class="vschess-tab-body-export-format"   name="format"></select>').appendTo(this.exportArea);
 		this.exportFilename = $('<input  class="vschess-tab-body-export-filename" name="filename" type="hidden" />').appendTo(this.exportArea);
 		this.exportGenerate = $('<button type="button" class="vschess-button vschess-tab-body-export-generate">\u751f\u6210\u68cb\u8c31</button>').appendTo(this.exportArea);
-		this.exportCopy = $('<button type="button" class="vschess-button vschess-tab-body-export-copy     vschess-tab-body-export-current">\u590d\u5236</button>').appendTo(this.exportArea);
-		this.exportDownload = $('<button type="button" class="vschess-button vschess-tab-body-export-download vschess-tab-body-export-current">\u4fdd\u5b58</button>').appendTo(this.exportArea);
+		this.exportCopy = $('<button type="button" class="vschess-button vschess-tab-body-export-copy     vschess-tab-body-export-current">복사</button>').appendTo(this.exportArea);
+		this.exportDownload = $('<button type="button" class="vschess-button vschess-tab-body-export-download vschess-tab-body-export-current">저장</button>').appendTo(this.exportArea);
 		this.exportData = {};
 		this.tabArea.children(".vschess-tab-title-export, .vschess-tab-body-export").remove();
 		this.tabArea.append(this.exportTitle);
@@ -8950,7 +8947,7 @@
 			}
 
 			generating = true;
-			_this.exportTextarea.val("\u6b63\u5728\u751f\u6210\u68cb\u8c31\uff0c\u8bf7\u7a0d\u5019\u3002");
+			_this.exportTextarea.val("기보가 생성중입니다...");
 
 			setTimeout(function () {
 				switch (_this.exportFormat.val()) {
@@ -8966,7 +8963,7 @@
 		});
 
 		this.exportCopy.bind(this.options.click, function () {
-			_this.copy(_this.exportTextarea.val(), function () { _this.showMessage("\u68cb\u8c31\u590d\u5236\u6210\u529f\uff0c\u60a8\u53ef\u4ee5\u76f4\u63a5\u7c98\u8d34\u4f7f\u7528\uff01"); });
+			_this.copy(_this.exportTextarea.val(), function () { _this.showMessage("기보가 복사되었습니다. 다른 프로그램에 붙여넣기할수 있습니다."); });
 		});
 
 		this.exportDownload.bind(this.options.click, function () {
@@ -8974,7 +8971,7 @@
 				var UTF8Text = _this.exportTextarea.val().replace(/\n/g, "\r\n").replace(/\r\r/g, "\r");
 				var GBKArray = new Uint8Array(vschess.iconv2GBK(UTF8Text));
 				var exportFormat = _this.exportFormat.val();
-				var fileName = _this.chessInfo.title || "民俗将棋";
+				var fileName = _this.chessInfo.title || "기보나라";
 
 				if (exportFormat.indexOf("PGN") === 0) {
 					_this.localDownload(fileName + ".pgn", GBKArray, { type: "application/octet-stream" });
@@ -9010,7 +9007,7 @@
 		format = format || this.getExportFormat();
 		this._.exportFormat = vschess.exportFormatList[format] ? format : this.getExportFormat();
 		this.exportTextarea.removeClass().addClass("vschess-tab-body-export-textarea vschess-tab-body-export-textarea-format-" + format);
-		this.exportFilename.val(this.chessInfo.title || "民俗将棋");
+		this.exportFilename.val(this.chessInfo.title || "기보나라");
 
 		if (format === "TextBoard") {
 			this.exportGenerate.removeClass("vschess-tab-body-export-current");
@@ -9033,14 +9030,14 @@
 			var fen = list.shift().split(" ").slice(0, 2).join(" ");
 			var shortData = list.length ? fen + " moves " + list.join(" ") : fen;
 
-			this.exportTextarea.val("\u4ece\u5f00\u5c40\u5f00\u59cb\uff1a\n" + longData + "\n\n\u4ece\u5403\u5b50\u5f00\u59cb\uff1a\n" + shortData);  //
+			this.exportTextarea.val("처음부터 시작\n" + longData + "\n\n기물 먹음 부터 시작:\n" + shortData);  //
 		}
 		else if ((format === "PengFei" || format === "DhtmlXQ") && !force && this.getNodeLength() >= vschess.bigBookCritical) {
 			// 大棋谱需要加参数才同步
 			this.exportCopy.removeClass("vschess-tab-body-export-current");
 			this.exportDownload.removeClass("vschess-tab-body-export-current");
 			this.exportGenerate.addClass("vschess-tab-body-export-current");
-			this.exportTextarea.val("\u8bf7\u70b9\u51fb\u201c\u751f\u6210\u201d\u6309\u94ae\u751f\u6210\u68cb\u8c31\u3002");
+			this.exportTextarea.val("'생성'버튼을 클릭하여 기보를 생성하세요.");
 		}
 		else {
 			this.exportGenerate.removeClass("vschess-tab-body-export-current");
@@ -9241,7 +9238,7 @@
 		this.helpArea = $('<div class="vschess-help-area"></div>');
 		this.helpArea.html('<div class="vschess-help-area-detail">' + helpDetail + '</div>');
 		this.DOM.append(this.helpArea);
-		this.helpAreaClose = $('<button type="button" class="vschess-button vschess-help-close">\u5173 \u95ed</button>');
+		this.helpAreaClose = $('<button type="button" class="vschess-button vschess-help-close">닫 기</button>');
 		this.helpAreaClose.bind(this.options.click, function () { _this.hideHelpArea(); });
 		this.helpArea.append(this.helpAreaClose);
 		return this;
@@ -9292,18 +9289,18 @@
 	vschess.load.prototype.createInfoList = function () {
 		var _this = this;
 		this.chessInfo = vschess.dataToInfo(this.chessData, this.options.parseType);
-		this.setChessTitle(this.chessInfo && this.chessInfo.title || "民俗将棋");
+		this.setChessTitle(this.chessInfo && this.chessInfo.title || "기보나라");
 		this.infoList = $('<ul class="vschess-tab-body-info-list"></ul>');
 		this.infoArea.append(this.infoList);
 		this.insertInfoByCurrent();
-		this.infoEdit = $('<button type="button" class="vschess-button vschess-tab-body-info-edit" >\u7f16 \u8f91</button>');
-		this.infoEmpty = $('<button type="button" class="vschess-button vschess-tab-body-info-empty">\u6e05 \u7a7a</button>');
+		this.infoEdit = $('<button type="button" class="vschess-button vschess-tab-body-info-edit" >편 집</button>');
+		this.infoEmpty = $('<button type="button" class="vschess-button vschess-tab-body-info-empty">삭제</button>');
 		this.infoArea.append(this.infoEdit);
 		this.infoArea.append(this.infoEmpty);
 		this.infoEdit.bind(this.options.click, function () { _this.showInfoEditor(); });
 
 		this.infoEmpty.bind(this.options.click, function () {
-			if (!confirm("\u786e\u5b9a\u8981\u6e05\u7a7a\u6240\u6709\u4fe1\u606f\u5417\uff1f")) {
+			if (!confirm("모든 정보를 지우겠습니까?")) {
 				return false;
 			}
 
@@ -9390,13 +9387,13 @@
 		}
 
 		this.setInfoEditorItemValueResult(this.infoEditorItemValue.result.val());
-		this.infoEditorOK = $('<button type="button" class="vschess-button vschess-info-editor-ok"    >\u786e \u5b9a</button>');
-		this.infoEditorEmpty = $('<button type="button" class="vschess-button vschess-info-editor-empty" >\u6e05 \u7a7a</button>');
-		this.infoEditorCancel = $('<button type="button" class="vschess-button vschess-info-editor-cancel">\u53d6 \u6d88</button>');
+		this.infoEditorOK = $('<button type="button" class="vschess-button vschess-info-editor-ok"    >예</button>');
+		this.infoEditorEmpty = $('<button type="button" class="vschess-button vschess-info-editor-empty" >삭제</button>');
+		this.infoEditorCancel = $('<button type="button" class="vschess-button vschess-info-editor-cancel">취 소</button>');
 
 		this.infoEditorOK.bind(this.options.click, function () {
 			_this.chessInfo = _this.getInfoFromEditor();
-			_this.setChessTitle(_this.chessInfo && _this.chessInfo.title || "民俗将棋");
+			_this.setChessTitle(_this.chessInfo && _this.chessInfo.title || "기보나라");
 			_this.insertInfoByCurrent();
 			_this.hideInfoEditor();
 			_this.rebuildExportAll();
@@ -9404,7 +9401,7 @@
 		});
 
 		this.infoEditorEmpty.bind(this.options.click, function () {
-			if (!confirm("\u786e\u5b9a\u8981\u6e05\u7a7a\u6240\u6709\u4fe1\u606f\u5417\uff1f")) {
+			if (!confirm("모든 정보를 지우겠습니까?")) {
 				return false;
 			}
 
@@ -9452,7 +9449,7 @@
 			}
 		}
 
-		return this.setChessTitle(this.chessInfo && this.chessInfo.title || "民俗将棋");
+		return this.setChessTitle(this.chessInfo && this.chessInfo.title || "기보나라");
 	};
 
 	// 根据结果设置选择结果单选按钮
@@ -9579,7 +9576,7 @@
 	vschess.load.prototype.refreshMoveSelectListNode = function () {
 		var _this = this;
 		var startRound = this.situationList[0][1];
-		var selectListNode = ['<li class="vschess-move-select-node-begin">===== \u68cb\u5c40\u5f00\u59cb' + (this.commentList[0] ? "*" : "") + ' =====</li>'];  // ==== 棋局开始 ====
+		var selectListNode = ['<li class="vschess-move-select-node-begin">===== 시작' + (this.commentList[0] ? "*" : "") + ' =====</li>'];  // ==== 棋局开始 ====
 
 		switch (this.getMoveFormat()) {
 			case "iccs": var moveList = this.getTurnForMove() ? this.moveNameList.ICCSM.slice(0) : this.moveNameList.ICCS.slice(0); break;
@@ -9657,7 +9654,7 @@
 	// 刷新变招选择列表内所有着法
 	vschess.load.prototype.refreshChangeSelectListNode = function () {
 		if (this.getCurrentStep() <= 0) {
-			this.changeSelectTitle.text("\u63d0\u793a\u4fe1\u606f");
+			this.changeSelectTitle.text("힌트 정보");
 			this.changeSelectList.empty();
 
 			for (var i = 0; i < this.options.startTips.length; ++i) {
@@ -9686,13 +9683,13 @@
 			selectListNode.push('<li class="vschess-change-select-node">');
 			selectListNode.push('<span class="vschess-change-select-node-text vschess-change-select-node-move">');
 			selectListNode.push(converter(changeMove, prevFen, this.options).move, changeList[i].comment ? "*" : "", '</span>');
-			selectListNode.push('<span class="vschess-change-select-node-text vschess-change-select-node-up">\u4e0a\u79fb</span>');
-			selectListNode.push('<span class="vschess-change-select-node-text vschess-change-select-node-down">\u4e0b\u79fb</span>');
-			selectListNode.push('<span class="vschess-change-select-node-text vschess-change-select-node-delete">\u5220\u9664</span>');
+			selectListNode.push('<span class="vschess-change-select-node-text vschess-change-select-node-up">위로</span>');
+			selectListNode.push('<span class="vschess-change-select-node-text vschess-change-select-node-down">아래</span>');
+			selectListNode.push('<span class="vschess-change-select-node-text vschess-change-select-node-delete">삭제</span>');
 			selectListNode.push('</li>');
 		}
 
-		this.changeSelectTitle.text("\u53d8\u62db\u5217\u8868");
+		this.changeSelectTitle.text("행마목차");
 		this.changeSelectList.html(selectListNode.join(""));
 		this.changeSelectListChanges = this.changeSelectList.children();
 		this.changeSelectListChanges.first().addClass("vschess-change-select-node-first");
@@ -9754,7 +9751,7 @@
 			each.children(".vschess-change-select-node-delete").bind(_this.options.click, function (e) {
 				e.stopPropagation();
 
-				if (!confirm("\u786e\u5b9a\u8981\u5220\u9664\u8be5\u7740\u6cd5\u5417\uff1f\u8be5\u7740\u6cd5\u53ca\u4e4b\u540e\u7684\u6240\u6709\u7740\u6cd5\u90fd\u6c49\u88ab\u5220\u9664\uff01")) {
+				if (!confirm("현재 행마를 지우겠습니까? 현재 행마뒤 수준들은 전부 지워집니다.")) {
 					return false;
 				}
 
@@ -10893,7 +10890,7 @@
 
 	// 程序转换为字符串信息
 	vschess.toString = function () {
-		return "\u5fae\u601d\u8c61\u68cb\u64ad\u653e\u5668 V" + vschess.version + " https://www.xiaxiangqi.com/vschess/ Copyright \u00a9 2009-2023 Margin.Top \u7248\u6743\u6240\u6709";
+		return "기보나라 V" + vschess.version + "  https://www.suntev.com Copyright \u00a9 2009-2024 Suntev.com CopyRight";
 	};
 
 	// 将 vschess 提升为全局变量，这样外部脚本就可以调用了

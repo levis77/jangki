@@ -9545,7 +9545,7 @@
 	vschess.load.prototype.createMobileTag = function () {
 		var _this = this;
 
-		this.mobileCloseTab = $('<div class="vschess-mobile-close-tab">\u68cb<br />\u76d8</div>');
+		this.mobileCloseTab = $('<div class="vschess-mobile-close-tab">홈</div>');
 		this.DOM.children(".vschess-mobile-close-tab").remove();
 		this.DOM.append(this.mobileCloseTab);
 
@@ -9553,7 +9553,7 @@
 			_this.showTab("board");
 		});
 
-		this.mobileShowMoveList = $('<div class="vschess-mobile-show-move-list">\u7740<br />\u6cd5</div>');
+		this.mobileShowMoveList = $('<div class="vschess-mobile-show-move-list">행<br />마</div>');
 		this.DOM.children(".vschess-mobile-show-move-list").remove();
 		this.DOM.append(this.mobileShowMoveList);
 

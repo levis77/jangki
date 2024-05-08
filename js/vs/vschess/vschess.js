@@ -1693,17 +1693,17 @@
 
 		// 可导出棋谱格式列表
 		exportFormatList: {
-			PGN_Chinese: "\u4e2d\u6587 PGN \u683c\u5f0f",
+			PGN_Chinese: "한자 PGN 파일",
 			GIB: "장기도사 GIB 파일",
-			PGN_WXF: "WXF PGN \u683c\u5f0f",
-			PGN_ICCS: "ICCS PGN \u683c\u5f0f",
-			PengFei: "\u9e4f\u98de PFC \u683c\u5f0f",
-			DhtmlXQ: "\u4e1c\u840d DhtmlXQ UBB \u683c\u5f0f",
-			DHJHtmlXQ: "\u5e7f\u4e1c\u8c61\u68cb\u7f51 DHJHtmlXQ \u683c\u5f0f",
-			ChessDB: "\u4e91\u5e93\u6307\u4ee4\u683c\u5f0f",
-			Text: "\u6587\u672c TXT \u683c\u5f0f",
-			QQ: "\uff31\uff31 CHE \u683c\u5f0f",
-			TextBoard: "\u6587\u5b57\u68cb\u76d8"
+			PGN_WXF: "WXF PGN 파일",
+			PGN_ICCS: "ICCS PGN 파일",
+			PengFei: "펑페이 PFC 파일",
+			DhtmlXQ: "뚱핑 DhtmlXQ UBB 파일",
+			DHJHtmlXQ: "광동썅치 DHJHtmlXQ 파일",
+			ChessDB: "크라우드 커맨드 파일",
+			Text: "문서 TXT 파일",
+			QQ: "QQ CHE 파일",
+			TextBoard: "문자판"
 		},
 
 		// 必须为起始局面才可以导出的棋谱格式列表
@@ -1896,8 +1896,8 @@
 	vschess.defaultOptions.help += '<h2>2.&ensp;&ensp; ">" "<" 버튼을 클릭하면 1수씩 변화합니다. ">>" "<<" 버튼을 클릭하면 매번 10수씩 변화합니다.</h2>';
 	vschess.defaultOptions.help += '<h2>3.&ensp;&ensp;"복사" 버튼을 클릭하면 현재 판 상태를 복사할 수 있습니다.</h2>';
 	vschess.defaultOptions.help += '<h2>4.&ensp;&ensp; 판 복사한 후 전문적인 인공지능 소프트웨어에 입력하여 사용할 수 있습니다.</h2>';
-	vschess.defaultOptions.help += '<h2>5.판 분석할 시 전문적인 인공지능 소프트웨어 사용을 권장합니다.</h2>';
-	vschess.defaultOptions.help += '<h2>6.&ensp;&ensp;장기판에서 직접 놓아보기를 할수 있습니다.</h2>';
+	vschess.defaultOptions.help += '<h2>5.&ensp;&ensp; 판 분석할 시 전문적인 인공지능 소프트웨어 사용을 권장합니다.</h2>';
+	vschess.defaultOptions.help += '<h2>6.&ensp;&ensp;장기판에서 직접 기물 놓아보기를 할수 있습니다.</h2>';
 	vschess.defaultOptions.help += '<h2>7.&ensp;&ensp;행마 목차에서 행마순서를 변경 혹은 행마를 지울수 있습니다.</h2>';
 	vschess.defaultOptions.help += '<h2>8.&ensp;&ensp;기보해설 입력후 기보입력창외 아무곳을 클릭하면 저장됩니다.</h2>';
 	vschess.defaultOptions.help += '<h2>9.&ensp;&ensp;판 편집시 현재기보가 지워지므로 기보저장을 주의하세요.</h2>';
@@ -7807,7 +7807,7 @@
 		}
 
 		this.formatBarButton.copy.bind(this.options.click, function () {
-			_this.copy(_this.getCurrentFen(), function () { _this.showMessage("판 복사가 완료되었습니다. 다른 프로그램에 판 붙여넣기를 할수 있습니다."); });
+			_this.copy(_this.getCurrentFen(), function () { _this.showMessage("판 복사가 완료되었습니다."); });
 		});
 
 		this.formatBarButton.pass.bind(this.options.click, function () {
@@ -10427,7 +10427,7 @@
 	// 创建生成分享信息按钮
 	vschess.load.prototype.createShareGenerateButton = function () {
 		var _this = this;
-		this.shareGenerateButton = $('<button type="button" class="vschess-button vschess-tab-body-share-generate-button">\u751f\u6210\u5206\u4eab\u4ee3\u7801</button>');
+		this.shareGenerateButton = $('<button type="button" class="vschess-button vschess-tab-body-share-generate-button">기보나라 웹주소</button>');
 		this.shareGenerateButton.appendTo(this.shareArea);
 
 		this.shareGenerateButton.bind(this.options.click, function () {
@@ -10438,8 +10438,8 @@
 			_this.shareImageTitle.removeClass("vschess-tab-body-image-current");
 
 			if (_this.options.cloudApi && _this.options.cloudApi.saveBookForShare) {
-				_this.shareHTMLTextInput.val("\u6b63\u5728\u751f\u6210\uff0c\u8bf7\u7a0d\u5019\u3002");
-				_this.shareUBBTextInput.val("\u6b63\u5728\u751f\u6210\uff0c\u8bf7\u7a0d\u5019\u3002");
+				_this.shareHTMLTextInput.val("로딩중 입니다.");
+				_this.shareUBBTextInput.val("로딩중 입니다.");
 				_this.rebuildExportDhtmlXQ();
 
 				$.ajax({
@@ -10449,12 +10449,12 @@
 					dataType: "json",
 					success: function (response) {
 						if (response.code === 0) {
-							_this.shareUBBTextInput.val("[" + _this.options.ubbTagName + "]" + response.data.id + "[/" + _this.options.ubbTagName + "]");
-							_this.shareHTMLTextInput.val('<script src="' + _this.options.cloudApi.HTMLShareJS + '?id=' + response.data.id + '"></script>');
+							_this.shareUBBTextInput.val("https://gibo.netlify.app");
+							_this.shareHTMLTextInput.val("https://gibo.netlify.app");
 						}
 					},
 					error: function () {
-						alert("\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u5141\u8bb8\u8de8\u57df\uff0c\u4e0d\u80fd\u4f7f\u7528\u6b64\u529f\u80fd\u3002");
+						alert("웹브라우저가 지원하지 않는 기능입니다.");
 					}
 				});
 			}
@@ -10466,17 +10466,17 @@
 	// 创建 HTML 分享信息区域
 	vschess.load.prototype.createShareHTML = function () {
 		var _this = this;
-		this.shareHTMLTitle = $('<div class="vschess-tab-body-share-title">HTML \u4ee3\u7801\uff1a</div>');
+		this.shareHTMLTitle = $('<div class="vschess-tab-body-share-title">기보나라 웹주소</div>');
 		this.shareHTMLTitle.appendTo(this.shareArea);
 		this.shareHTMLTextBox = $('<div class="vschess-tab-body-share-text"></div>');
 		this.shareHTMLTextBox.appendTo(this.shareArea);
-		this.shareHTMLTextInput = $('<input class="vschess-tab-body-share-text-input" value="\u8bf7\u70b9\u51fb\u201c\u751f\u6210\u5206\u4eab\u4ee3\u7801\u201d\u6309\u94ae\u3002" readonly="readonly" />');
+		this.shareHTMLTextInput = $('<input class="vschess-tab-body-share-text-input" value="생성버튼을 클릭하세요." readonly="readonly" />');
 		this.shareHTMLTextInput.appendTo(this.shareHTMLTextBox);
-		this.shareHTMLTextCopy = $('<button type="button" class="vschess-button vschess-tab-body-share-text-copy">\u590d \u5236</button>');
+		this.shareHTMLTextCopy = $('<button type="button" class="vschess-button vschess-tab-body-share-text-copy">복 사</button>');
 		this.shareHTMLTextCopy.appendTo(this.shareHTMLTextBox);
 
 		this.shareHTMLTextCopy.bind(this.options.click, function () {
-			_this.copy(_this.shareHTMLTextInput.val(), function () { _this.showMessage("HTML \u4ee3\u7801\u590d\u5236\u6210\u529f\uff0c\u60a8\u53ef\u4ee5\u76f4\u63a5\u7f51\u9875\u4e2d\u7c98\u8d34\u4f7f\u7528\uff01"); });
+			_this.copy(_this.shareHTMLTextInput.val(), function () { _this.showMessage("웹 주소가 복사되었습니다."); });
 		});
 
 		return this;
@@ -10485,17 +10485,17 @@
 	// 创建 UBB 分享信息区域
 	vschess.load.prototype.createShareUBB = function () {
 		var _this = this;
-		this.shareUBBTitle = $('<div class="vschess-tab-body-share-title">\u8bba\u575b UBB \u4ee3\u7801\uff1a</div>');
+		this.shareUBBTitle = $('<div class="vschess-tab-body-share-title">기보나라 웹주소</div>');
 		this.shareUBBTitle.appendTo(this.shareArea);
 		this.shareUBBTextBox = $('<div class="vschess-tab-body-share-text"></div>');
 		this.shareUBBTextBox.appendTo(this.shareArea);
-		this.shareUBBTextInput = $('<input class="vschess-tab-body-share-text-input" value="\u8bf7\u70b9\u51fb\u201c\u751f\u6210\u5206\u4eab\u4ee3\u7801\u201d\u6309\u94ae\u3002" readonly="readonly" />');
+		this.shareUBBTextInput = $('<input class="vschess-tab-body-share-text-input" value="생성버튼을 클릭하세요." readonly="readonly" />');
 		this.shareUBBTextInput.appendTo(this.shareUBBTextBox);
-		this.shareUBBTextCopy = $('<button type="button" class="vschess-button vschess-tab-body-share-text-copy">\u590d \u5236</button>');
+		this.shareUBBTextCopy = $('<button type="button" class="vschess-button vschess-tab-body-share-text-copy">복 사</button>');
 		this.shareUBBTextCopy.appendTo(this.shareUBBTextBox);
 
 		this.shareUBBTextCopy.bind(this.options.click, function () {
-			_this.copy(_this.shareUBBTextInput.val(), function () { _this.showMessage("\u8bba\u575b UBB \u4ee3\u7801\u590d\u5236\u6210\u529f\uff0c\u60a8\u53ef\u4ee5\u76f4\u63a5\u5728 BBS \u8bba\u575b\u4e2d\u7c98\u8d34\u4f7f\u7528\uff01"); });
+			_this.copy(_this.shareUBBTextInput.val(), function () { _this.showMessage("웹 주소가 복사되었습니다."); });
 		});
 
 		return this;
@@ -10504,7 +10504,7 @@
 	// 创建生成 Gif 图按钮
 	vschess.load.prototype.createGifGenerateButton = function () {
 		var _this = this;
-		this.gifGenerateButton = $('<button type="button" class="vschess-button vschess-tab-body-image-generate-button">\u751f\u6210 Gif \u52a8\u753b</button>');
+		this.gifGenerateButton = $('<button type="button" class="vschess-button vschess-tab-body-image-generate-button">Gif 기보파일 만들기</button>');
 		this.gifGenerateButton.appendTo(this.shareArea);
 
 		this.gifGenerateButton.bind(this.options.click, function () {
@@ -10514,7 +10514,7 @@
 				}
 
 				_this.shareImageTitle.addClass("vschess-tab-body-image-current");
-				_this.shareImageTitle.text("\u6b63\u5728\u751f\u6210\uff0c\u8bf7\u7a0d\u5019\u3002");
+				_this.shareImageTitle.text("로딩중 입니다.");
 
 				$.ajax({
 					url: _this.options.cloudApi.gif,
@@ -10527,7 +10527,7 @@
 						}
 					},
 					error: function () {
-						alert("\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u5141\u8bb8\u8de8\u57df\uff0c\u4e0d\u80fd\u4f7f\u7528\u6b64\u529f\u80fd\u3002");
+						alert("웹브라우저가 지원하지 않는 기능입니다");
 					}
 				});
 			}
@@ -10547,7 +10547,7 @@
 	// 创建生成小程序码按钮
 	vschess.load.prototype.createWeixinGenerateButton = function () {
 		var _this = this;
-		this.weixinGenerateButton = $('<button type="button" class="vschess-button vschess-tab-body-share-generate-button">\u751f\u6210\u5c0f\u7a0b\u5e8f\u7801</button>');
+		this.weixinGenerateButton = $('<button type="button" class="vschess-button vschess-tab-body-share-generate-button">애플렛 큐알코드 만들기</button>');
 		this.weixinGenerateButton.appendTo(this.shareArea);
 
 		this.weixinGenerateButton.bind(this.options.click, function () {
@@ -10558,7 +10558,7 @@
 			_this.shareImageTitle.addClass("vschess-tab-body-image-current");
 
 			if (_this.options.cloudApi && _this.options.cloudApi.saveBookForWeixin) {
-				_this.shareImageTitle.text("\u6b63\u5728\u751f\u6210\uff0c\u8bf7\u7a0d\u5019\u3002");
+				_this.shareImageTitle.text("로딩중 입니다.");
 				_this.rebuildExportDhtmlXQ();
 
 				$.ajax({
@@ -10572,7 +10572,7 @@
 						}
 					},
 					error: function () {
-						alert("\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u5141\u8bb8\u8de8\u57df\uff0c\u4e0d\u80fd\u4f7f\u7528\u6b64\u529f\u80fd\u3002");
+						alert("웹브라우저가 지원하지 않는 기능입니다");
 					}
 				});
 			}

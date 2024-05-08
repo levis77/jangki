@@ -15,7 +15,7 @@
 .vschess-layout-default .vschess-column-index-a .vschess-column-index-item { float:left ; }
 .vschess-layout-default .vschess-column-index-b .vschess-column-index-item { float:right; }
 .vschess-layout-default .vschess-control-bar { position:absolute; top:497px; left:2px; width:382px; _width:385px; height:24px; z-index:10; }
-.vschess-layout-default .vschess-control-bar-button  { width: 45px; float:left; z-index:0; margin-right:2px; }
+.vschess-layout-default .vschess-control-bar-button  { width: 45px; float:left; z-index:0; margin-right:2px; font:bold 18px Georgia, serif;}
 .vschess-layout-default .vschess-control-bar-play    { width: 98px; display:none; color:#008000; }
 .vschess-layout-default .vschess-control-bar-pause   { width: 98px; display:none; color:#ff0000; }
 .vschess-layout-default .vschess-control-bar-button-current { display:block; }

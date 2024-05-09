@@ -15,7 +15,7 @@
 .vschess-layout-default .vschess-column-index-a .vschess-column-index-item { float:left ; }
 .vschess-layout-default .vschess-column-index-b .vschess-column-index-item { float:right; }
 .vschess-layout-default .vschess-control-bar { position:absolute; top:497px; left:2px; width:382px; _width:385px; height:24px; z-index:10; }
-.vschess-layout-default .vschess-control-bar-button  { width: 45px; float:left; z-index:0; margin-right:2px; font:bold 18px  Georgia, serif;}
+.vschess-layout-default .vschess-control-bar-button  { width: 45px; float:left; z-index:0; margin-right:2px; font:bold 18px Georgia, serif;}
 .vschess-layout-default .vschess-control-bar-play    { width: 98px; display:none; }
 .vschess-layout-default .vschess-control-bar-pause   { width: 98px; display:none; }
 .vschess-layout-default .vschess-control-bar-button-current { display:block; }
@@ -160,7 +160,7 @@
 .vschess-layout-default .vschess-info-editor-item-value-result-radio { position:relative; top:1px; }
 .vschess-layout-default .vschess-info-editor-item-value-result-label { line-height:24px; margin:0 10px 0 3px; }
 .vschess-layout-default .vschess-info-editor-item-auto { position:absolute; top:-2px; right:0px; width:40px; height:24px; }
-.vschess-layout-default .vschess-info-editor-item-auto-result { right:369px; top:0px; }
+.vschess-layout-default .vschess-info-editor-item-auto-result { right:305px; top:0px; }
 .vschess-layout-default .vschess-info-editor-ok     { position:absolute; bottom:25px; left:277px; width:60px; height:24px; }
 .vschess-layout-default .vschess-info-editor-empty  { position:absolute; bottom:25px; left:347px; width:60px; height:24px; }
 .vschess-layout-default .vschess-info-editor-cancel { position:absolute; bottom:25px; left:417px; width:60px; height:24px; }

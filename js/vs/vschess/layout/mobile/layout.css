@@ -171,7 +171,7 @@
 .vschess-layout-mobile .vschess-info-editor-item-value-result-label { line-height:36px; margin:0 10px 0 3px; font-size:20px; }
 .vschess-layout-mobile .vschess-info-editor-item-auto { position:absolute; top:1px; right:10px; width:80px; height:32px; line-height:32px; font-size:20px; }
 .vschess-layout-mobile .vschess-info-editor-item-auto-ecco   { right:400px; }
-.vschess-layout-mobile .vschess-info-editor-item-auto-result { right:270px; top:2px; }
+.vschess-layout-mobile .vschess-info-editor-item-auto-result { right:150px; top:2px; }
 .vschess-layout-mobile .vschess-info-editor-ok     { position:absolute; bottom:17px; left:118px; width:160px; height:48px; }
 .vschess-layout-mobile .vschess-info-editor-empty  { position:absolute; bottom:17px; left:295px; width:160px; height:48px; }
 .vschess-layout-mobile .vschess-info-editor-cancel { position:absolute; bottom:17px; left:472px; width:160px; height:48px; }

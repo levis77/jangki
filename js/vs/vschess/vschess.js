@@ -1348,6 +1348,13 @@
 			'A0': '01', 'B0': '02', 'C0': '03', 'D0': '04', 'E0': '05', 'F0': '06', 'G0': '07', 'H0': '08', 'I0': '09'
 		},
 		
+		
+		// 1:车 2:马 3:相（象） 4:仕（士） 5:帅（将） 6:炮 7:（卒）8:（兵）
+		
+		i2k: {
+			'1': '차', '2': '마', '3': '상', '4': '사', '5': '군', '6': '포', '7': '졸', '8': '병'
+		},
+		
 		//GIB 文字转换FEN  한차림 초차림  [초차림 "마상상마"]		[檬瞒覆 "付惑惑付"]
 
 		g2f: {
@@ -1812,8 +1819,8 @@
 
 		// 起始局面提示信息
 		startTips: [
-			"청색행마는 변형행마가 있슴",
-			"'*'별표기는 해설이 존재함",
+			"청색표기는 변형행마가 있슴",
+			"*별표기는 해설이 존재함",
 			"장기도사 GIB파일을 지원함",
 			"'복사'버튼으로 현재판복사",
 			'<a href="https://gibo.netlify.app/" target="_blank">GiboNara기보나라 VsChess V' + vschess.version + "</a>",
@@ -6195,10 +6202,56 @@
 		situation[0] === 1 && ++situation[1];
 		return { move: move.toUpperCase().substring(0, 2) + "-" + move.toUpperCase().substring(2, 4), movedFen: vschess.situationToFen(situation) };
 	};
+	
+	// 节点 ICCS 转换为 KOREAN 着法
+	vschess.Node2KOREAN = function (move, fen) {
+	
+		var RegExp = vschess.RegExp();
+		RegExp.FenShort.test(fen) || (fen = vschess.defaultFen);
+		var situation = vschess.fenToSituation(fen);
+		situation[vschess.i2s[move.substring(2, 4)]] = situation[vschess.i2s[move.substring(0, 2)]];
+		situation[vschess.i2s[move.substring(0, 2)]] = 1;
+		situation[0] = 3 - situation[0];
+		situation[0] === 1 && ++situation[1];
+		
+		var isB = fen.split(" ")[1] === "b";
+		move = move.toLowerCase();
+
+		// 黑方旋转处理
+		if (isB) {
+			var step = vschess.roundMove(move);
+			var situationX = vschess.fenToSituation(vschess.roundFen(fen));
+		}
+		// 红方直接处理
+		else {
+			var step = move;
+			var situationX = vschess.fenToSituation(fen);
+		}
+
+		var from = vschess.i2s[step.substring(0, 2)];
+
+		if (situationX[from] < 16) {
+			return { move: "None", movedFen: vschess.defaultFen };
+		}
+
+		var piece = situationX[from] & 15;
+		
+		if (piece === 7 && isB)
+			{ piece =8;
+			}
+		
+		
+		return { move: vschess.i2g[move.toUpperCase().substring(0, 2)] + vschess.i2k[piece] + vschess.i2g[move.toUpperCase().substring(2, 4)], movedFen: vschess.situationToFen(situation) };
+	};
 
 	// 节点 ICCS 转换为 ICCS 着法（无 Fen 串）
 	vschess.Node2ICCS_NoFen = function (move) {
 		return move.toUpperCase().substring(0, 2) + "-" + move.toUpperCase().substring(2, 4);
+	};
+	
+	// 节点 ICCS 转换为 Korean 着法（无 Fen 串）
+	vschess.Node2KOREAN_NoFen = function (move) {
+		return  vschess.i2g[move.toUpperCase().substring(0, 2)] + "--" + vschess.i2g[move.toUpperCase().substring(2, 4)];
 	};
 
 	// 节点 ICCS 列表转换为着法列表，列表第一个元素为起始局面 Fen 串
@@ -7739,16 +7792,18 @@
 			case "wxf": var formarButton = "WXF"; break;
 			case "iccs": var formarButton = "ICCS"; break;
 			case "chinese": var formarButton = "\u4e2d \u6587"; break;
+			case "korean": var formarButton = "신좌표"; break;
 		}
 
 		this.formatBarButton = {
 
 			pass: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-pass"   >한수쉼</button>'),
 			copy: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-copy"   >복 사</button>'),
-			format: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-format" >포 맷</button>'),
+			format: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-format" >좌 표</button>'),
 			help: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-help"   >도움말</button>'),
 			//save		: $('<button type="hid" class="vschess-button vschess-format-bar-button vschess-format-bar-save"   >\u4fdd \u5b58</button>'),
 			chinese: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-chinese">한 자</button>'),
+			korean: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-korean">신좌표</button>'),
 			wxf: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-wxf"    >WXF</button>'),
 			iccs: $('<button type="button" class="vschess-button vschess-format-bar-button vschess-format-bar-iccs"   >ICCS</button>'),
 			saveFormat: $('<input  type="hidden" class="vschess-format-bar-save-format"   name="format" value="DhtmlXQ" />'),
@@ -7758,6 +7813,7 @@
 
 		this.formatBarButton.format.bind(this.options.click, function () {
 			_this.formatBarButton.chinese.toggleClass("vschess-format-bar-button-change");
+			_this.formatBarButton.korean.toggleClass("vschess-format-bar-button-change");
 			_this.formatBarButton.wxf.toggleClass("vschess-format-bar-button-change");
 			_this.formatBarButton.iccs.toggleClass("vschess-format-bar-button-change");
 		});
@@ -7783,13 +7839,23 @@
 		 */
 		this.formatBarButton.chinese.bind(this.options.click, function () {
 			_this.formatBarButton.chinese.removeClass("vschess-format-bar-button-change");
+			_this.formatBarButton.korean.removeClass("vschess-format-bar-button-change");
 			_this.formatBarButton.wxf.removeClass("vschess-format-bar-button-change");
 			_this.formatBarButton.iccs.removeClass("vschess-format-bar-button-change");
 			_this.setMoveFormat("chinese").refreshMoveListNode();
 		});
+		
+		this.formatBarButton.korean.bind(this.options.click, function () {
+			_this.formatBarButton.chinese.removeClass("vschess-format-bar-button-change");
+			_this.formatBarButton.korean.removeClass("vschess-format-bar-button-change");
+			_this.formatBarButton.wxf.removeClass("vschess-format-bar-button-change");
+			_this.formatBarButton.iccs.removeClass("vschess-format-bar-button-change");
+			_this.setMoveFormat("korean").refreshMoveListNode();
+		});
 
 		this.formatBarButton.wxf.bind(this.options.click, function () {
 			_this.formatBarButton.chinese.removeClass("vschess-format-bar-button-change");
+			_this.formatBarButton.korean.removeClass("vschess-format-bar-button-change");
 			_this.formatBarButton.wxf.removeClass("vschess-format-bar-button-change");
 			_this.formatBarButton.iccs.removeClass("vschess-format-bar-button-change");
 			_this.setMoveFormat("wxf").refreshMoveListNode();
@@ -7797,6 +7863,7 @@
 
 		this.formatBarButton.iccs.bind(this.options.click, function () {
 			_this.formatBarButton.chinese.removeClass("vschess-format-bar-button-change");
+			_this.formatBarButton.korean.removeClass("vschess-format-bar-button-change");
 			_this.formatBarButton.wxf.removeClass("vschess-format-bar-button-change");
 			_this.formatBarButton.iccs.removeClass("vschess-format-bar-button-change");
 			_this.setMoveFormat("iccs").refreshMoveListNode();
@@ -9581,6 +9648,7 @@
 		switch (this.getMoveFormat()) {
 			case "iccs": var moveList = this.getTurnForMove() ? this.moveNameList.ICCSM.slice(0) : this.moveNameList.ICCS.slice(0); break;
 			case "wxf": var moveList = this.getTurnForMove() ? this.moveNameList.WXFM.slice(0) : this.moveNameList.WXF.slice(0); break;
+			case "korean": var moveList = this.getTurnForMove() ? this.moveNameList.KoreanM.slice(0) : this.moveNameList.Korean.slice(0); break;
 			default: var moveList = this.getTurnForMove() ? this.moveNameList.ChineseM.slice(0) : this.moveNameList.Chinese.slice(0); break;
 		}
 
@@ -9673,6 +9741,7 @@
 		switch (this.getMoveFormat()) {
 			case "iccs": var converter = vschess.Node2ICCS; break;
 			case "wxf": var converter = vschess.Node2WXF; break;
+			case "korean": var converter = vschess.Node2KOREAN; break;
 			default: var converter = vschess.Node2Chinese; break;
 		}
 
@@ -9795,6 +9864,7 @@
 		switch (format) {
 			case "iccs": this._.moveFormat = "iccs"; break;
 			case "wxf": this._.moveFormat = "wxf"; break;
+			case "korean": this._.moveFormat = "korean"; break;
 			default: this._.moveFormat = "chinese"; break;
 		}
 
@@ -10098,7 +10168,8 @@
 		this.moveNameList = {
 			WXF: [this.node.fen], WXFM: [turnFen],
 			ICCS: [this.node.fen], ICCSM: [turnFen],
-			Chinese: [this.node.fen], ChineseM: [turnFen]
+			Chinese: [this.node.fen], ChineseM: [turnFen],
+			Korean:  [this.node.fen], KoreanM: [turnFen]
 		};
 
 		for (var currentNode = this.node; currentNode.next.length;) {
@@ -10129,9 +10200,13 @@
 
 			var wxf = vschess.Node2WXF(currentNode.move, prevFen).move;
 			var wxfM = wxf.charCodeAt(1) > 96 ? vschess.Node2WXF(vschess.turnMove(currentNode.move), vschess.turnFen(prevFen)).move : vschess.turnWXF(wxf);
+			
+			var korean = vschess.Node2KOREAN(currentNode.move, prevFen).move;
 
 			this.moveNameList.ICCS.push(vschess.Node2ICCS_NoFen(currentNode.move));
 			this.moveNameList.ICCSM.push(vschess.Node2ICCS_NoFen(vschess.turnMove(currentNode.move)));
+			this.moveNameList.Korean.push(korean);
+			this.moveNameList.KoreanM.push(vschess.Node2KOREAN_NoFen(vschess.turnMove(currentNode.move)));
 			this.moveNameList.WXF.push(wxf);
 			this.moveNameList.WXFM.push(wxfM);
 			this.moveNameList.Chinese.push(vschess.Node2Chinese(wxf, prevFen, this.options));

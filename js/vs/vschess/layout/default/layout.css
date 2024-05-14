@@ -49,7 +49,8 @@
 .vschess-layout-default .vschess-change-select-tips a:hover { color:#887d6f; }
 .vschess-layout-default .vschess-format-bar { position:absolute; top:497px; left:384px; width:188px; _width:191px; height:24px; z-index:15; }
 .vschess-layout-default .vschess-format-bar-button  { position:relative; display:block; width:45px; float:left; margin-right:2px; }
-.vschess-layout-default .vschess-format-bar-chinese { display:none; position:absolute; top:-72px; left:94px; }
+.vschess-layout-default .vschess-format-bar-chinese { display:none; position:absolute; top:-96px; left:94px; }
+.vschess-layout-default .vschess-format-bar-korean { display:none; position:absolute; top:-72px; left:94px; }
 .vschess-layout-default .vschess-format-bar-wxf     { display:none; position:absolute; top:-48px; left:94px; }
 .vschess-layout-default .vschess-format-bar-iccs    { display:none; position:absolute; top:-24px; left:94px; }
 .vschess-layout-default .vschess-format-bar-button-change { display:block; }

@@ -9,7 +9,7 @@
 [DhtmlXQ_blacklevel]9단[/DhtmlXQ_blacklevel]
 [DhtmlXQ_blacktime]15분[/DhtmlXQ_blacktime]
 [DhtmlXQ_ecco]A00[/DhtmlXQ_ecco]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_group]B[/DhtmlXQ_group]
 [DhtmlXQ_place]중국심양[/DhtmlXQ_place]

@@ -5,7 +5,7 @@
 [DhtmlXQ_redlevel]6단[/DhtmlXQ_redlevel]
 [DhtmlXQ_blackname]리근[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]9단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2023-11-06[/DhtmlXQ_date]
 [DhtmlXQ_place]러뽀우[/DhtmlXQ_place]

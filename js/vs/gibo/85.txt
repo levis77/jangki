@@ -7,7 +7,7 @@
 [DhtmlXQ_black]付惑惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackteam]중국[/DhtmlXQ_blackteam]
 [DhtmlXQ_blackname]김철[/DhtmlXQ_blackname]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]55[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_group]예선[/DhtmlXQ_group]

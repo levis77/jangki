@@ -7,7 +7,7 @@
 [DhtmlXQ_black]付惑惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]이창원[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]초단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]98[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2006-03-14[/DhtmlXQ_date]

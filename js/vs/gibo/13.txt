@@ -8,7 +8,7 @@
 [DhtmlXQ_black]付惑惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]厘硅屈 8窜[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]8단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_date]2017-07-30[/DhtmlXQ_date]
 [DhtmlXQ_place]특별대국실[/DhtmlXQ_place]
 [DhtmlXQ_round]8강전[/DhtmlXQ_round]

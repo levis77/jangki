@@ -5,7 +5,7 @@
 [DhtmlXQ_redlevel]6단[/DhtmlXQ_redlevel]
 [DhtmlXQ_blackname]김정수[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]4단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_date]2015-09-27[/DhtmlXQ_date]
 [DhtmlXQ_fen]rnba1anbr/4k4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/4K4/RNBA1ABNR w - - 0 1[/DhtmlXQ_fen]
 [DhtmlXQ_binit]0919293948596979891777062646668600102030415070608012720323436383[/DhtmlXQ_binit]

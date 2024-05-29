@@ -8,7 +8,7 @@
 [DhtmlXQ_blackteam][/DhtmlXQ_blackteam]
 [DhtmlXQ_blackname]이남춘[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]미상[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]145[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_group]미상[/DhtmlXQ_group]

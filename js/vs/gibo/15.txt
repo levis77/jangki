@@ -8,7 +8,7 @@
 [DhtmlXQ_black]付惑付惑[/DhtmlXQ_black]
 [DhtmlXQ_blackname]정원직[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]초단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]汉分[/DhtmlXQ_result]
+[DhtmlXQ_result]한점수승[/DhtmlXQ_result]
 [DhtmlXQ_group]결승[/DhtmlXQ_group]
 [DhtmlXQ_date]2017-08-27[/DhtmlXQ_date]
 [DhtmlXQ_place]특별대국실[/DhtmlXQ_place]

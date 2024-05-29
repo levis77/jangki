@@ -5,7 +5,7 @@
 [DhtmlXQ_redlevel]三단[/DhtmlXQ_redlevel]
 [DhtmlXQ_blackname]이남춘[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]九단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2015-02-22[/DhtmlXQ_date]
 [DhtmlXQ_place]KBS[/DhtmlXQ_place]

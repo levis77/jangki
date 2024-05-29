@@ -5,7 +5,7 @@
 [DhtmlXQ_redlevel]八단[/DhtmlXQ_redlevel]
 [DhtmlXQ_blackname]정국봉[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]初단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2014-02-02[/DhtmlXQ_date]
 [DhtmlXQ_place]특별대국실[/DhtmlXQ_place]

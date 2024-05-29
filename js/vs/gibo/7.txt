@@ -5,7 +5,7 @@
 [DhtmlXQ_redlevel]9단[/DhtmlXQ_redlevel]
 [DhtmlXQ_redtime]固惑[/DhtmlXQ_redtime]
 [DhtmlXQ_blackname]염광수[/DhtmlXQ_blackname]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]89[/DhtmlXQ_remark]
 [DhtmlXQ_group]1[/DhtmlXQ_group]
 [DhtmlXQ_date]2015-12-11[/DhtmlXQ_date]

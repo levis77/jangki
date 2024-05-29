@@ -8,7 +8,7 @@
 [DhtmlXQ_black]惑付惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]정상규[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]8단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]71[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_group]B조[/DhtmlXQ_group]

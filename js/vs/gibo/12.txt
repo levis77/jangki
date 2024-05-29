@@ -7,7 +7,7 @@
 [DhtmlXQ_black]付惑惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]박영완[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]6단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2017-06-04[/DhtmlXQ_date]
 [DhtmlXQ_round]32강[/DhtmlXQ_round]

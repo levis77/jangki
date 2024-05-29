@@ -7,7 +7,7 @@
 [DhtmlXQ_black]惑付惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]임성숙[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]3단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]64[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2005-11-20[/DhtmlXQ_date]

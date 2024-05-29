@@ -7,7 +7,7 @@
 [DhtmlXQ_blackname]배성철[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]9단[/DhtmlXQ_blacklevel]
 [DhtmlXQ_blacktime]30분[/DhtmlXQ_blacktime]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2018-12-02[/DhtmlXQ_date]
 [DhtmlXQ_place]특별대국실[/DhtmlXQ_place]

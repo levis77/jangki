@@ -8,7 +8,7 @@
 [DhtmlXQ_blackteam]중국[/DhtmlXQ_blackteam]
 [DhtmlXQ_blackname]김동학(대한민국)[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]미상[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]86[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_group]미상[/DhtmlXQ_group]

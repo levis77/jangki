@@ -8,7 +8,7 @@
 [DhtmlXQ_blackteam][/DhtmlXQ_blackteam]
 [DhtmlXQ_blackname]전만일[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]미상[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚分[/DhtmlXQ_result]
+[DhtmlXQ_result]초점수승[/DhtmlXQ_result]
 [DhtmlXQ_remark]130[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_group]미상[/DhtmlXQ_group]

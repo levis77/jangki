@@ -5,7 +5,7 @@
 [DhtmlXQ_redlevel]九단[/DhtmlXQ_redlevel]
 [DhtmlXQ_blackname]김동학[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]九단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_black]惑付惑付[/DhtmlXQ_black]
 [DhtmlXQ_red]付惑惑付[/DhtmlXQ_red]

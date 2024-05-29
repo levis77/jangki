@@ -8,7 +8,7 @@
 [DhtmlXQ_black]惑付惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]이남춘[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]9단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]137[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_group]A조[/DhtmlXQ_group]

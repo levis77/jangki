@@ -7,7 +7,7 @@
 [DhtmlXQ_black]惑付惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]성우제[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]9단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2005-07-23[/DhtmlXQ_date]
 [DhtmlXQ_place]KBS[/DhtmlXQ_place]

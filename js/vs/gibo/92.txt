@@ -7,7 +7,7 @@
 [DhtmlXQ_redrating]중국[/DhtmlXQ_redrating]
 [DhtmlXQ_black]惑付惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]윤희윤[/DhtmlXQ_blackname]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]68[/DhtmlXQ_remark]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2009-10-10[/DhtmlXQ_date]

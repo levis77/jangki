@@ -8,7 +8,7 @@
 [DhtmlXQ_black]付惑惑付[/DhtmlXQ_black]
 [DhtmlXQ_blackname]이래원[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]7단[/DhtmlXQ_blacklevel]
-[DhtmlXQ_result]楚胜[/DhtmlXQ_result]
+[DhtmlXQ_result]초완승[/DhtmlXQ_result]
 [DhtmlXQ_remark]123[/DhtmlXQ_remark]
 [DhtmlXQ_group]B조[/DhtmlXQ_group]
 [DhtmlXQ_date]2009-09-01[/DhtmlXQ_date]

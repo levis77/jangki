@@ -7,7 +7,7 @@
 [DhtmlXQ_blackteam]중국[/DhtmlXQ_blackteam]
 [DhtmlXQ_blackname]정국봉[/DhtmlXQ_blackname]
 [DhtmlXQ_blacktime]20분[/DhtmlXQ_blacktime]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_group]예선4조[/DhtmlXQ_group]
 [DhtmlXQ_date]2015-12-15[/DhtmlXQ_date]

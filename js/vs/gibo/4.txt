@@ -10,7 +10,7 @@
 [DhtmlXQ_blacklevel]三단[/DhtmlXQ_blacklevel]
 [DhtmlXQ_blacktime]15분[/DhtmlXQ_blacktime]
 [DhtmlXQ_ecco]A00[/DhtmlXQ_ecco]
-[DhtmlXQ_result]汉胜[/DhtmlXQ_result]
+[DhtmlXQ_result]한완승[/DhtmlXQ_result]
 [DhtmlXQ_author]돌김[/DhtmlXQ_author]
 [DhtmlXQ_date]2020-03-12[/DhtmlXQ_date]
 [DhtmlXQ_round]결승1회전[/DhtmlXQ_round]

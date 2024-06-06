@@ -4,7 +4,6 @@
 [DhtmlXQ_red]付惑惑付[/DhtmlXQ_red]
 [DhtmlXQ_redname]박영완[/DhtmlXQ_redname]
 [DhtmlXQ_redlevel]6단[/DhtmlXQ_redlevel]
-[DhtmlXQ_redtime]阿 1矫埃 20盒 [/DhtmlXQ_redtime]
 [DhtmlXQ_black]付惑付惑[/DhtmlXQ_black]
 [DhtmlXQ_blackname]정원직[/DhtmlXQ_blackname]
 [DhtmlXQ_blacklevel]초단[/DhtmlXQ_blacklevel]

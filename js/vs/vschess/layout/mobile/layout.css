@@ -193,10 +193,10 @@
 .vschess-layout-mobile .vschess-guess-arrow-show { display:block; }
 .vschess-layout-mobile .vschess-guess-arrow .vschess-guess-arrow-head { position:absolute; display:block; top: 0px; left: 0px; width: 0px; height:   0px; border-right:20px solid transparent; border-left:20px solid transparent; }
 .vschess-layout-mobile .vschess-guess-arrow .vschess-guess-arrow-body { position:absolute; display:block; top:30px; left:10px; width:20px; height:2000px; }
-.vschess-layout-mobile .vschess-guess-arrow-red   .vschess-guess-arrow-head { border-bottom:40px solid #f00; }
-.vschess-layout-mobile .vschess-guess-arrow-black .vschess-guess-arrow-head { border-bottom:40px solid #000; }
-.vschess-layout-mobile .vschess-guess-arrow-red   .vschess-guess-arrow-body { background-color:#f00; }
-.vschess-layout-mobile .vschess-guess-arrow-black .vschess-guess-arrow-body { background-color:#000; }
+.vschess-layout-mobile .vschess-guess-arrow-red   .vschess-guess-arrow-head { border-bottom:40px solid #00f; }
+.vschess-layout-mobile .vschess-guess-arrow-black .vschess-guess-arrow-head { border-bottom:40px solid #f00; }
+.vschess-layout-mobile .vschess-guess-arrow-red   .vschess-guess-arrow-body { background-color:#00f; }
+.vschess-layout-mobile .vschess-guess-arrow-black .vschess-guess-arrow-body { background-color:#f00; }
 .vschess-layout-mobile.vschess-edit-mode .vschess-title { padding-right:317px; }
 .vschess-layout-mobile.vschess-edit-mode .vschess-column-index-a { padding-right:382px; }
 .vschess-layout-mobile.vschess-edit-mode .vschess-tab-area { left:695px; z-index:40; }

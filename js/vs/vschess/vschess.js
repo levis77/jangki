@@ -9250,13 +9250,29 @@
 
 	// 显示猜想展示箭头
 	vschess.load.prototype.showGuessArrow = function (player, move) {
-		if (!vschess.RegExp().Node.test(move)) {
+/* 		if (!vschess.RegExp().Node.test(move)) {
 			return this;
 		}
-
+ */
 		var arrow = player === "b" ? this.guessArrowBlack : this.guessArrowRed;
-		var from = vschess.turn[this.getTurn() >> 1 ? 3 : 0][vschess.i2b[move.substring(0, 2)]];
-		var to = vschess.turn[this.getTurn() >> 1 ? 3 : 0][vschess.i2b[move.substring(2, 4)]];
+/* 		var from = vschess.turn[this.getTurn() >> 1 ? 3 : 0][vschess.i2b[move.substring(0, 2)]];
+		var to = vschess.turn[this.getTurn() >> 1 ? 3 : 0][vschess.i2b[move.substring(2, 4)]]; */
+		if (this.getTurn() === 0) {
+			result = 0;
+			} else if (this.getTurn() === 1) {
+			result = 1;
+			} else if (this.getTurn() === 2) {
+			result = 2;
+			} else if (this.getTurn() === 3) {
+			result = 3;
+			} else {
+			result = 0; // 如果都不是，则选择默认值
+    	}
+	
+		var from      = vschess.turn[result][vschess.i2b[move.substring(0, 2)]];
+		var   to      = vschess.turn[result][vschess.i2b[move.substring(2, 4)]];
+		
+		
 		var fromPiece = this.piece.eq(from);
 		var toPiece = this.piece.eq(to);
 		var widthP = fromPiece.width();
@@ -9896,6 +9912,20 @@
 		var From = vschess.b2i[vschess.turn[this.getTurn()][from]];
 		var To = vschess.b2i[vschess.turn[this.getTurn()][to]];
 		var Move = From + To;
+		
+		var sIndex = vschess.b2s[vschess.turn[this.getTurn()][from]];
+		var piece  = this.situationList[this.getCurrentStep()][sIndex];
+		
+		if  (piece < 24)
+				{  //this.hideGuessArrow("b"); 
+				this.showGuessArrow("r", Move);
+				}
+		else
+				{ 
+				//this.hideGuessArrow("r");
+		         this.showGuessArrow("b", Move);
+				}
+	
 
 		// 着法不合法，不移动棋子
 		var isBanRepeatLongThreat = this.getBanRepeatLongThreat() && ~this.repeatLongThreatMoveList.indexOf(Move);
@@ -10464,8 +10494,8 @@
 		var from = vschess.i2s[this.getMoveByStep(step).substring(0, 2)];
 		var to = vschess.i2s[this.getMoveByStep(step).substring(2, 4)];
 		var currentSelect = this.getCurrentSelect();
-		this.setSelectByPieceIndex(vschess.turn[this.getTurn()][vschess.s2b[from]]);
-		this.setSelectByPieceIndex(vschess.turn[this.getTurn()][vschess.s2b[to]]);
+		// this.setSelectByPieceIndex(vschess.turn[this.getTurn()][vschess.s2b[from]]);
+		// this.setSelectByPieceIndex(vschess.turn[this.getTurn()][vschess.s2b[to]]);
 		this.setCurrentSelect(currentSelect);
 		return this;
 	};

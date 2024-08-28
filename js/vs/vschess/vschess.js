@@ -2,7 +2,7 @@
  * 微思象棋播放器 V2.6.1
  * https://www.xiaxiangqi.com/
  *
- * Copyright @ 2009-2023 Margin.Top 版权所有
+ * Copyright @ 2009-2024 Suntev 版权所有
  * https://www.suntev.com/
  *
  * 本程序遵循 LGPL 协议
@@ -1755,7 +1755,7 @@
 		soundStyle: "default",
 
 		// 默认音量
-		volume: 50,
+		volume: 10,
 
 		// 自定义音效路径，空字符串表示程序自动识别，如需自定义请参考官方文档
 		soundPath: "",
